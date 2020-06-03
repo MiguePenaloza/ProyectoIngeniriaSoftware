@@ -6,4 +6,10 @@ RSpec.describe ToroVaca do
     it "Deberia devolver el codigo" do
         expect(@torovaca.getCodigo()).to eq(1234)
     end
+    it "Deberia la cantidad de toros que al incicio es 0" do
+        expect(@torovaca.getCantidadToros()).to eq(0)
+    end
+    it "Deberia devolver la cantidad de vacas que al inicio es 0 " do
+        expect(@torovaca.getCantidadVacas()).to eq(0)
+    end
 end
