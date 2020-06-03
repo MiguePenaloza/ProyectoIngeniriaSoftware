@@ -12,7 +12,7 @@ class ToroVaca
     def intento(codigoIntento)
         codigoIntentoVector = codigoIntento.to_s.split("")
         calcularToros(codigoIntentoVector)
-        #calcularVacas(codigoIntentoVector)
+        calcularVacas(codigoIntentoVector)
     end
     def calcularToros(vector)
         for i in (0..@codigo.size-1)
@@ -21,18 +21,18 @@ class ToroVaca
             end
         end
     end
-    # def calcularVacas(vector)
-    #     for i in (0..@codigo.size-1)
-    #         for j in (0..vector.size-1)
-    #             if i!=j
-    #                 if vector[i]==@codigo[j]
-    #                     #puts(i)
-    #                     @cantidadVacas=@cantidadVacas+1
-    #                 end
-    #             end
-    #         end    
-    #     end
-    # end
+    def calcularVacas(vector)
+        for i in (0..@codigo.size-1)
+            for j in (0..vector.size-1)
+                if i!=j
+                    if vector[i]==@codigo[j]
+                        #puts(i)
+                        @cantidadVacas=@cantidadVacas+1
+                    end
+                end
+            end    
+        end
+    end
     def getCantidadToros
         return @cantidadToros
     end

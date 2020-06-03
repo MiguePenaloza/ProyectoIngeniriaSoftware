@@ -19,10 +19,10 @@ RSpec.describe ToroVaca do
         @torovaca.calcularToros(x)
         expect(@torovaca.getCantidadToros()).to eq(4)
     end
-    # it "Deberia devolver la cantidad de vacas " do
-    #     x="1234"
-    #     x = x.to_s.split("")
-    #     @torovaca.calcularVacas(x)
-    #     expect(@torovaca.getCantidadVacas()).to eq(0)
-    # end
+    it "Deberia devolver la cantidad de vacas " do
+        x="1234"
+        x = x.to_s.split("")
+        @torovaca.calcularVacas(x)
+        expect(@torovaca.getCantidadVacas()).to eq(0)
+    end
 end
