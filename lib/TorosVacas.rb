@@ -26,7 +26,6 @@ class ToroVaca
             for j in (0..vector.size-1)
                 if i!=j
                     if vector[i]==@codigo[j]
-                        #puts(i)
                         @cantidadVacas=@cantidadVacas+1
                     end
                 end
