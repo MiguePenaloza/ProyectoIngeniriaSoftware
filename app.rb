@@ -9,5 +9,5 @@ post '/juego' do
     
     codigo=toroVaca.getCodigo()
     "<p>El codigo es: </p>"+ codigo.to_s
-    #erb :juego
+    erb :juego
 end
