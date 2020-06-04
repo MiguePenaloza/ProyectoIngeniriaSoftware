@@ -2,13 +2,15 @@ require "./TorosVacas.rb"
 
 x="1243"
 x = x.to_s.split("")
-puts(x)
+#puts(x)
 @prueba=ToroVaca.new("")
 @prueba.setCodigo("1234")
 
 
 # @prueba.calcularToros(x)
 # @prueba.calcularVacas(x)
-@prueba.intento("1234")
-puts("cantidad de toros: ",@prueba.getCantidadToros)
-puts("cantidad de vacas: ",@prueba.getCantidadVacas)
+@prueba.intento("1324")
+puts("Los Toros son:", @prueba.getCantidadToros)
+puts("Los Vacas son:", @prueba.getCantidadVacas)
+# puts("cantidad de toros: ",@prueba.getCantidadToros)
+# puts("cantidad de vacas: ",@prueba.getCantidadVacas)

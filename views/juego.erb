@@ -1,10 +1,33 @@
+<!--<link id="template-file" href="../lib/TorosVacas.rb" rel="import" /> -->
 
-<form id="juego" method='post' action="/intento">
+<form id="juego" method='post' action="/intento" >
         <input style="text-align:center" type="string" name="valor1" min="0" max="9" required="">
         <input style="text-align:center" type="string" name="valor2" min="0" max="9" required="">
         <input style="text-align:center" type="string" name="valor3" min="0" max="9" required="">
         <input style="text-align:center" type="string" name="valor4" min="0" max="9" required="">
-        <input type="button" value="aceptar">
+        <input type="submit" value="aceptar">
+        
 </form>
+<%# <div id="demo"></div> %>
+<%# 
+<script>
+function myFunction(event) {
+  
+  event.preventDefault();
+  torovaca=new ToroVaca.new("")
+  console.log(torovaca)
+  //codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s
+  a=event.currentTarget.elements.valor1.value;
+  b=e.currentTarget.elements.valor2.value;
+  c=event.currentTarget.elements.valor3.value;
+  d=event.currentTarget.elements.valor4.value;
+  codigoIntento=a+b+c+d;
+  console.log(codigoIntento);
+  document.getElementById("demo").innerHTML = codigoIntento;
+
+}
 
 
+
+document.getElementById("juego").addEventListener("submit", myFunction);
+</script> %>
