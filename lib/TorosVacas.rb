@@ -6,6 +6,10 @@ class ToroVaca
         @codigo=@codigo.to_s.split("")
         
     end
+    def setCodigo(codigo)
+        @codigo=codigo
+        @codigo=@codigo.to_s.split("")
+    end
     def getCodigo
         return @codigo.join
     end
@@ -15,14 +19,16 @@ class ToroVaca
         calcularVacas(codigoIntentoVector)
     end
     def calcularToros(vector)
+        @cantidadToros=0
         for i in (0..@codigo.size-1)
             if @codigo[i]==vector[i]
                 @cantidadToros=@cantidadToros+1
-            end
+            end 
         end
     end
     def calcularVacas(vector)
-        for i in (0..@codigo.size-1)
+        @cantidadVacas=0
+        for i in (0..@codigo.size-1)    
             for j in (0..vector.size-1)
                 if i!=j
                     if vector[i]==@codigo[j]

@@ -1,0 +1,7 @@
+
+
+
+<%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s%>
+<%@torovaca.intento(codigoIntento)%>
+<p>La cantidad de toros es : <%= @torovaca.getCantidadToros()%></p>
+<p>La cantidad de vacas es : <%= @torovaca.getCantidadVacas()%></p>
