@@ -13,6 +13,10 @@ class ToroVaca
         @codigo=codigo
         @codigo=@codigo.to_s.split("")
     end
+    def setDatos
+        @numeroIntentos=0
+        @codigo=""
+    end
     def getCodigo
         return @codigo.join
     end

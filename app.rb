@@ -2,17 +2,15 @@ require 'sinatra'
 require './lib/TorosVacas.rb'
 def initialize()
     @torovaca=ToroVaca.new("")
-    @contador=0
+    @contador=11
 end
 get '/' do
     erb :index
-
 end
 
 post '/juego' do
-    @torovaca.setCodigo(params[:codigo].to_s)
+    @contador=@contador-1
     erb :juego
-    
 end
 
 post '/intento' do

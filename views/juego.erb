@@ -1,13 +1,34 @@
 <!--<link id="template-file" href="../lib/TorosVacas.rb" rel="import" /> -->
-
-<form id="juego" method='post' action="/intento" >
-        <input style="text-align:center" type="string" name="valor1" min="0" max="9" required="">
-        <input style="text-align:center" type="string" name="valor2" min="0" max="9" required="">
-        <input style="text-align:center" type="string" name="valor3" min="0" max="9" required="">
-        <input style="text-align:center" type="string" name="valor4" min="0" max="9" required="">
-        <input type="submit" value="aceptar">
-        
+<h1 style="text-align:center">COMIENZA EL JUEGO<h1>
+<%@torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s)%>
+<h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+<form id="juego" method='post' action="/intento" style="text-align:center">
+        <input style="text-align:center" type="number" name="valor1" min="0" max="9" required="">
+        <input style="text-align:center" type="number" name="valor2" min="0" max="9" required="">
+        <input style="text-align:center" type="number" name="valor3" min="0" max="9" required="">
+        <input style="text-align:center" type="number" name="valor4" min="0" max="9" required="">
+        <input type="submit" value="aceptar"> 
 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <%# <div id="demo"></div> %>
 <%# 
 <script>
@@ -24,9 +45,7 @@ function myFunction(event) {
   codigoIntento=a+b+c+d;
   console.log(codigoIntento);
   document.getElementById("demo").innerHTML = codigoIntento;
-
 }
-
 
 
 document.getElementById("juego").addEventListener("submit", myFunction);
