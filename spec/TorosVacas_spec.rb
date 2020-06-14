@@ -1,5 +1,4 @@
 
-
 require "TorosVacas.rb"
 
 RSpec.describe ToroVaca do

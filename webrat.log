@@ -35,3 +35,146 @@ D, [2019-11-29T11:06:44.340570 #55621] DEBUG -- : REQUESTING PAGE: POST /ingresa
 D, [2019-11-29T11:06:44.348913 #55621] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2019-11-29T11:06:44.351681 #55621] DEBUG -- : REQUESTING PAGE: POST /ingresar with {"monto"=>"300"} and HTTP headers {"HTTP_REFERER"=>"/"}
 D, [2019-11-29T11:06:44.354087 #55621] DEBUG -- : REQUESTING PAGE: POST /retirar with {"retiro"=>"100"} and HTTP headers {"HTTP_REFERER"=>"/ingresar"}
+D, [2020-06-13T23:54:22.237874 #28880] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-13T23:55:08.849825 #28893] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-13T23:55:25.850869 #28901] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-13T23:56:53.037194 #28923] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-13T23:56:53.070388 #28923] DEBUG -- : REQUESTING PAGE: POST / with "field_name=valor1" and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-13T23:58:15.932444 #28953] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-13T23:58:15.954769 #28953] DEBUG -- : REQUESTING PAGE: POST / with "field_name=codigo1" and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T00:00:38.686027 #28969] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:01:16.433369 #28989] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:01:37.180256 #29004] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:03:21.880008 #29028] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:03:48.011728 #29042] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:05:13.159522 #29066] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:05:29.147733 #29080] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:05:54.483503 #29087] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:07:05.320346 #29101] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:07:37.482839 #29119] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:09:07.895022 #29132] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:09:34.171831 #29140] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:10:41.108286 #29164] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:11:38.882249 #29190] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:12:03.825806 #29201] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:17:51.465726 #29248] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:23:18.636467 #29343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:24:48.047900 #29373] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:25:25.830631 #29392] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:26:22.535790 #29418] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:28:24.314040 #29490] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:29:52.177267 #29536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:30:22.592727 #29552] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:34:48.378814 #29621] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T00:34:59.708237 #29629] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:35:03.082698 #29635] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:35:33.444811 #29644] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:35:57.733012 #29652] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:36:15.150545 #29667] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:41:10.381037 #29719] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:42:01.875603 #29753] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:42:24.135919 #29764] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:43:25.927562 #29791] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:43:36.670926 #29800] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:44:20.000756 #29830] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:44:49.969871 #29839] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:45:30.752904 #29852] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:45:44.126335 #29862] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:46:06.415466 #29874] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:46:13.776910 #29879] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:46:33.568737 #29889] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:47:21.844084 #29908] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:47:33.956891 #29913] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:48:45.101761 #29925] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T00:49:54.199739 #29935] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:00:08.484182 #30058] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:00:45.939307 #30067] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:00:45.975051 #30067] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:03:10.796060 #30115] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:03:10.836654 #30115] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:03:53.754694 #30144] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:03:53.781690 #30144] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:04:27.330933 #30163] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:04:27.355002 #30163] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:04:46.486320 #30182] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:05:50.778422 #30215] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:06:46.383700 #30240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:07:48.624034 #30254] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:09:05.233915 #30318] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:09:05.272611 #30318] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:14:17.891603 #30384] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:14:17.929118 #30384] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:14:50.680932 #30395] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:14:50.708616 #30395] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:14:50.718028 #30395] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:15:15.669078 #30410] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:15:15.701425 #30410] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:16:41.999684 #30451] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:16:42.037904 #30451] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:17:19.626460 #30472] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:17:19.664544 #30472] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:17:41.966844 #30485] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:17:41.993504 #30485] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:17:42.006417 #30485] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:19:03.149116 #30507] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:19:03.187068 #30507] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:19:03.195872 #30507] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:19:55.584920 #30529] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:19:55.619800 #30529] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:19:55.630843 #30529] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:20:45.658153 #30546] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:20:45.695589 #30546] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:20:45.705996 #30546] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:20:45.707488 #30546] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2020-06-14T01:21:32.531394 #30575] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:21:32.564313 #30575] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "valor1"=>"", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:21:32.576061 #30575] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:22:33.701014 #30601] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:22:33.734163 #30601] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:22:33.744551 #30601] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:23:26.227118 #30659] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:23:26.251687 #30659] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:23:26.263586 #30659] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:24:04.644596 #30686] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:24:04.679579 #30686] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:24:04.692815 #30686] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:25:39.887861 #30724] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:25:39.921517 #30724] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:25:39.932758 #30724] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:26:33.497757 #30752] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:26:33.528156 #30752] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:26:33.539950 #30752] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:27:35.601390 #30768] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:27:35.636712 #30768] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:27:35.643791 #30768] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:29:27.410120 #30800] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:29:27.447182 #30800] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:29:27.458505 #30800] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:31:01.740482 #30821] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:31:01.782891 #30821] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:31:01.796875 #30821] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:33:13.549749 #30863] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:33:13.585382 #30863] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:33:13.596802 #30863] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:34:44.709793 #30883] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:34:44.750405 #30883] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:34:44.770335 #30883] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:35:58.246561 #30917] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:35:58.280848 #30917] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:35:58.290450 #30917] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:36:44.990332 #30951] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:36:45.025391 #30951] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:36:45.039535 #30951] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:38:13.424074 #30991] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:38:13.458764 #30991] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:38:13.468724 #30991] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:39:50.761719 #31021] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:39:50.797531 #31021] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:39:50.808585 #31021] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T01:39:50.811503 #31021] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2020-06-14T01:41:42.652029 #31041] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T01:41:42.695998 #31041] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T01:41:42.708678 #31041] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-14T17:10:38.956689 #31298] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-14T17:10:38.992686 #31298] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-14T17:10:39.000575 #31298] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
