@@ -15,13 +15,13 @@ class ToroVaca
     end
 
     def getCantidadToros
-        #return @cantidadToros
-        return @listaToros
+        return @cantidadToros
+        #return @listaToros
     end
 
     def getCantidadVacas
-        #return @cantidadVacas
-        return @listaVacas
+        return @cantidadVacas
+        #return @listaVacas
     end
 
     def getNumeroIntentos
@@ -48,6 +48,7 @@ class ToroVaca
     end
 
     def calcularToros(vector)
+        @cantidadToros=0
         @listaToros=[]    
         for i in (0..@codigo.size-1)
             if @codigo[i]==vector[i]
@@ -58,6 +59,7 @@ class ToroVaca
     end
 
     def calcularVacas(vector)
+        @cantidadVacas=0
         @listaVacas=[]
         for i in (0..@codigo.size-1)    
             for j in (0..vector.size-1)
@@ -76,7 +78,8 @@ class ToroVaca
     end
 
     def winner()
-        return getCantidadToros().size == 4
+        #return getCantidadToros().size == 4
+        return @cantidadToros == 4
     end
     #--------------------- END Functions ------------------------------ 
 end
