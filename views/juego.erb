@@ -1,6 +1,6 @@
 <!--<link id="template-file" href="../lib/TorosVacas.rb" rel="import" /> -->
 <h1 style="text-align:center">COMIENZA EL JUEGO<h1>
-<%@torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s)%>
+<%$torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s)%>
 <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
 <form id="juego" method='post' action="/intento" style="text-align:center">
         <input style="text-align:center" type="text" name="valor1" maxlength="1" required="">

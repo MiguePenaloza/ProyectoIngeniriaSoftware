@@ -4,8 +4,6 @@ class ToroVaca
         @codigo = codigo.to_s.split("")
         @cantidadToros = 0
         @cantidadVacas = 0
-        @listaToros = []
-        @listaVacas = []
         @numeroIntentos = 0 
     end
 
