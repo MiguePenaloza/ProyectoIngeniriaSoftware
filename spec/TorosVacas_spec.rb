@@ -50,7 +50,7 @@ RSpec.describe ToroVaca do
     end
     it "prueba set codigo" do
         @torovaca.setCodigo("1234")
-        @torovaca.setDatos()
+        #@torovaca.setDatos()
         @torovaca.getNumeroIntentos()
     end
 end
