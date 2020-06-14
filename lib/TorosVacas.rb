@@ -2,11 +2,11 @@ class ToroVaca
 
     def initialize(codigo)
         @codigo = codigo.to_s.split("")
-        @cantidadToros=0
-        @cantidadVacas=0
-        @listaToros=[]
-        @listaVacas=[]
-        @numeroIntentos=0 
+        @cantidadToros = 0
+        @cantidadVacas = 0
+        @listaToros = []
+        @listaVacas = []
+        @numeroIntentos = 0 
     end
 
     #------------------- BEGIN GET's -----------------------------
@@ -31,22 +31,17 @@ class ToroVaca
 
     #------------------- BEGIN Set's -----------------------------
     def setCodigo(codigo)
-        @codigo=codigo.to_s.split("")
+        @codigo = codigo.to_s.split("")
     end
 
-    def setDatos
-        @numeroIntentos=0
-        @codigo=""
-    end
-
-    def setNumeroIntentos
+    def incrementarNumeroIntentos
         @numeroIntentos += 1
     end
     #--------------------- END Set's -----------------------------
 
     #------------------- BEGIN Functions -------------------------
     def intento(codigoIntento)
-        setNumeroIntentos()
+        incrementarNumeroIntentos()
         codigoIntentoVector = codigoIntento.to_s.split("")
         calcularToros(codigoIntentoVector)
         calcularVacas(codigoIntentoVector)
