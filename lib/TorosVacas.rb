@@ -1,37 +1,57 @@
 class ToroVaca
+
     def initialize(codigo)
-        @codigo = codigo 
+        @codigo = codigo.to_s.split("")
         @cantidadToros=0
         @cantidadVacas=0
-        @codigo=@codigo.to_s.split("")
         @listaToros=[]
         @listaVacas=[]
-        @numeroIntentos=0
-        
+        @numeroIntentos=0 
     end
+
+    #------------------- BEGIN GET's -----------------------------
+    def getCodigo
+        return @codigo.join
+    end
+
+    def getCantidadToros
+        #return @cantidadToros
+        return @listaToros
+    end
+
+    def getCantidadVacas
+        #return @cantidadVacas
+        return @listaVacas
+    end
+
+    def getNumeroIntentos
+        return @numeroIntentos
+    end
+    #--------------------- END Get's -----------------------------
+
+    #------------------- BEGIN Set's -----------------------------
     def setCodigo(codigo)
-        @codigo=codigo
-        @codigo=@codigo.to_s.split("")
+        @codigo=codigo.to_s.split("")
     end
+
     def setDatos
         @numeroIntentos=0
         @codigo=""
     end
-    def getCodigo
-        return @codigo.join
-    end
+
     def setNumeroIntentos
-        @numeroIntentos=@numeroIntentos+1
+        @numeroIntentos += 1
     end
-    def getNumeroIntentos
-        return @numeroIntentos
-    end
+    #--------------------- END Set's -----------------------------
+
+    #------------------- BEGIN Functions -------------------------
     def intento(codigoIntento)
         setNumeroIntentos()
         codigoIntentoVector = codigoIntento.to_s.split("")
         calcularToros(codigoIntentoVector)
         calcularVacas(codigoIntentoVector)
     end
+
     def calcularToros(vector)
         @listaToros=[]    
         for i in (0..@codigo.size-1)
@@ -41,6 +61,7 @@ class ToroVaca
             end 
         end
     end
+
     def calcularVacas(vector)
         @listaVacas=[]
         for i in (0..@codigo.size-1)    
@@ -54,18 +75,13 @@ class ToroVaca
             end    
         end
     end
-    def getCantidadToros
-        #return @cantidadToros
-        return @listaToros
-    end
-    def getCantidadVacas
-        #return @cantidadVacas
-        return @listaVacas
-    end
+
     def gameOver()
         return @numeroIntentos==10
     end
+
     def winner()
         return getCantidadToros().size == 4
     end
+    #--------------------- END Functions ------------------------------ 
 end
