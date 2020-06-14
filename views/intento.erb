@@ -1,7 +1,7 @@
 
 
 
-<%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s%>
+<%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s%>
 <%@torovaca.intento(codigoIntento)%>
 <%@contador=@contador+1%>
 <h3 style="text-align:center">Numero de intentos: <%=@torovaca.getNumeroIntentos()%><h3>
