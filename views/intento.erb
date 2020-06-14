@@ -14,12 +14,12 @@
     </form>
 <%end%>
 <%if @torovaca.winner()%>
-    <h3 style="text-align:center">YOU WINNER!!!!<h3>
+    <h3 style="text-align:center">GANASTE!!!<h3>
     <form method="get" action="/" style="text-align:center">
         <button type="submit" >Inicio</button>
     </form>
 <% elsif @torovaca.gameOver()%>
-    <h3 style="text-align:center">GAME OVER<h3>
+    <h3 style="text-align:center">PERDISTE :(<h3>
     <form method="get" action="/" style="text-align:center">
         <button type="submit" >Inicio</button>
     </form>
