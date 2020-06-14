@@ -7,12 +7,10 @@ end
 get '/' do
     erb :index
 end
-
 post '/juego' do
     @contador=@contador-1
     erb :juego
 end
-
 post '/intento' do
     
     erb :intento
