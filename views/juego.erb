@@ -1,59 +1,65 @@
 <!--<link id="template-file" href="../lib/TorosVacas.rb" rel="import" /> -->
-<link rel="stylesheet" href="/css/stylesheets.css">
+<head>
+  <link rel="stylesheet" href="/css/stylesheets.css">
+</head>
 
-<% $cronometro = Stopwatch.new %>
+<body>
+  <% $cronometro = Stopwatch.new %>
 
-<h1 style="text-align:center">COMIENZA EL JUEGO<h1>
-<% if $torovaca.getNivel()== "basico" %>
-  <%$torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s)%>
-  <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
-  
-  <form id="juego" method='post' action="/intento" style="text-align:center">
-          <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor3" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor4" maxlength="1" required="">
-          <input type="submit" value="Aceptar"> 
-          <input type="reset" value="Borrar Casillas">
-  </form>
-<%end%>
-<% if $torovaca.getNivel()== "intermedio" %>
-  <%$torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s+params[:codigo6].to_s)%>
-  <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
-  <form id="juego" method='post' action="/intento" style="text-align:center">
-          <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor3" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor4" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor5" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor6" maxlength="1" required="">
-          <input type="submit" value="Aceptar"> 
-          <input type="reset" value="Borrar Casillas">
-  </form>
-<%end%>
-<% if $torovaca.getNivel()== "avanzado" %>
-  <%$torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s+params[:codigo6].to_s+params[:codigo7].to_s+params[:codigo8].to_s)%>
-  <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
-  <form id="juego" method='post' action="/intento" style="text-align:center">
-          <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor3" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor4" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor5" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor6" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor7" maxlength="1" required="">
-          <input style="text-align:center" size ="5" type="text" name="valor8" maxlength="1" required="">
-          <input type="submit" value="Aceptar"> 
-          <input type="reset" value="Borrar Casillas">
-  </form>
-<%end%>
+  <h1 style="text-align:center">COMIENZA EL JUEGO</h1>
+  <% if $torovaca.getNivel()== "basico"
+    $torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s)%>
+    <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    
+    <form id="juego" method='post' action="/intento" style="text-align:center">
+            <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor3" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor4" maxlength="1" required="">
+            <input type="submit" value="Aceptar"> 
+            <input type="reset" value="Borrar Casillas">
+    </form>
+  <%end%>
+  <% if $torovaca.getNivel()== "intermedio"
+    $torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s+params[:codigo6].to_s)%>
+    <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <form id="juego" method='post' action="/intento" style="text-align:center">
+            <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor3" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor4" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor5" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor6" maxlength="1" required="">
+            <input type="submit" value="Aceptar"> 
+            <input type="reset" value="Borrar Casillas">
+    </form>
+  <%end%>
+  <% if $torovaca.getNivel()== "avanzado"
+    $torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s+params[:codigo6].to_s+params[:codigo7].to_s+params[:codigo8].to_s)%>
+    <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <form id="juego" method='post' action="/intento" style="text-align:center">
+            <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor3" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor4" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor5" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor6" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor7" maxlength="1" required="">
+            <input style="text-align:center" size ="5" type="text" name="valor8" maxlength="1" required="">
+            <input type="submit" value="Aceptar"> 
+            <input type="reset" value="Borrar Casillas">
+    </form>
+  <%end%>
 
-<div>
-  <form style="text-align:center">
-    <input type="button" onclick="myFunction()" class="button button3" value="Abandonar la partida"> 
-  </form>
-</div>
+  <div>
+    <form style="text-align:center">
+      <input type="button" onclick="myFunction()" class="button button3" value="Abandonar la partida"> 
+    </form>
+  </div>
+</body>
+<footer>
 
+</footer>
 
 <script>
   function myFunction() {
