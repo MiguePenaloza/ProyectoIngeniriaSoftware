@@ -1,56 +1,71 @@
 <head>
         <title>Toros y Vacas</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/stylesheets.css">
 </head>
-<h1 style="text-align:center">BIENVENIDOS</h1>
-<form id="configuracion" method='get' action='/configuracion' style="text-align:center">
-        <b>Menu de configuracion: </b>
-        <input type="submit" value="Menu" >
-</form>
-<%if (params[:nivel]).to_s != ""%>
-        <%$torovaca.setNivel((params[:nivel]).to_s) %>
-<%end%>
-<%if (params[:numeroIntentos]).to_i != 0%>
-        <%$torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)%>
-<%end%>
-<form id="menu" method='post' action='/juego' style="text-align:center">
-        <h3>INTRODUZCA EL CODIGO</h3>
 
-        <% if $torovaca.getNivel()== "basico" %>
-                <input type="submit" onclick="randBas()" value="Generar codigo aleatorio">
-                <input style="text-align:center" size ="5" id="bc1" type="text" name="codigo1" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="bc2" type="text" name="codigo2" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="bc3" type="text" name="codigo3" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="bc4" type="text" name="codigo4" maxlength="1" required="">
-                <input type="submit" value="Empezar Juego">
-        <%end%>
+<body>
 
+        <div class="container p-3 my-3 bg-dark text-white text-center">
+                <div class="page-header">
+                        <h1 class="first-title">
+                                SONGS WEB APPLICATION
+                        </h1>
+                </div>
+        </div>
 
-        <% if $torovaca.getNivel()== "intermedio" %>
-                <input type="submit" onclick="randInt()" value="Generar codigo aleatorio">
-                <input style="text-align:center" size ="5" id="i1" type="text" name="codigo1" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="i2" type="text" name="codigo2" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="i3" type="text" name="codigo3" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="i4" type="text" name="codigo4" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="i5" type="text" name="codigo5" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="i6" type="text" name="codigo6" maxlength="1" required="">
-                <input type="submit" value="Empezar Juego">
-        <%end%>
+        <h1 style="text-align:center">BIENVENIDOS</h1>
 
+        <form id="configuracion" method='get' action='/configuracion' style="text-align:center">
+                <b>Menu de configuracion: </b>
+                <input type="submit" value="Menu" >
+        </form>
 
-        <% if $torovaca.getNivel()== "avanzado" %>
-                <input type="submit" onclick="randAvan()" value="Generar codigo aleatorio">
-                <input style="text-align:center" size ="5" id="a1" type="text" name="codigo1" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a2" type="text" name="codigo2" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a3" type="text" name="codigo3" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a4" type="text" name="codigo4" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a5" type="text" name="codigo5" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a6" type="text" name="codigo6" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a7" type="text" name="codigo7" maxlength="1" required="">
-                <input style="text-align:center" size ="5" id="a8" type="text" name="codigo8" maxlength="1" required="">
-                <input type="submit" value="Empezar Juego" >
-        <%end%>
-</form>
+        <%if (params[:nivel]).to_s != ""
+                $torovaca.setNivel((params[:nivel]).to_s)
+        end
 
+        if (params[:numeroIntentos]).to_i != 0
+                $torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)
+        end%>
+
+        <form class="form" id="menu" method='post' action='/juego' style="text-align:center">
+                <h3>INTRODUZCA EL CODIGO</h3>
+
+                <% if $torovaca.getNivel()== "basico" %>
+                        <input type="submit" onclick="randBas()" value="Generar codigo aleatorio">
+                        <input style="text-align:center" size ="5" id="bc1" type="text" name="codigo1" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="bc2" type="text" name="codigo2" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="bc3" type="text" name="codigo3" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="bc4" type="text" name="codigo4" maxlength="1" required="">
+                        <input type="submit" value="Empezar Juego">
+                <%end%>
+
+                <% if $torovaca.getNivel()== "intermedio" %>
+                        <input type="submit" onclick="randInt()" value="Generar codigo aleatorio">
+                        <input style="text-align:center" size ="5" id="i1" type="text" name="codigo1" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="i2" type="text" name="codigo2" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="i3" type="text" name="codigo3" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="i4" type="text" name="codigo4" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="i5" type="text" name="codigo5" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="i6" type="text" name="codigo6" maxlength="1" required="">
+                        <input type="submit" value="Empezar Juego">
+                <%end%>
+
+                <% if $torovaca.getNivel()== "avanzado" %>
+                        <input type="submit" onclick="randAvan()" value="Generar codigo aleatorio">
+                        <input style="text-align:center" size ="5" id="a1" type="text" name="codigo1" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a2" type="text" name="codigo2" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a3" type="text" name="codigo3" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a4" type="text" name="codigo4" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a5" type="text" name="codigo5" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a6" type="text" name="codigo6" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a7" type="text" name="codigo7" maxlength="1" required="">
+                        <input style="text-align:center" size ="5" id="a8" type="text" name="codigo8" maxlength="1" required="">
+                        <input type="submit" value="Empezar Juego" >
+                <%end%>
+        </form>
+</body>
 
 <script>
         function randBas(){
