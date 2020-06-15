@@ -3,8 +3,8 @@ require './lib/TorosVacas.rb'
 require './lib/cronometro.rb'
 
 def initialize()
-    # @torovaca=ToroVaca.new("")
-    # @contador=11
+    # $torovaca=ToroVaca.new("")
+    # $contador=11
 end
 get '/' do    
     $torovaca=ToroVaca.new("")
@@ -16,6 +16,8 @@ post '/juego' do
     erb :juego
 end
 post '/intento' do
-    
     erb :intento
+end
+get '/configuracion' do
+    erb :configuracion
 end
