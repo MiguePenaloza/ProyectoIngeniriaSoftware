@@ -40,7 +40,9 @@ class ToroVaca
     #------------------- BEGIN Functions -------------------------
     def intento(codigoIntento)
         incrementarNumeroIntentos()
-        codigoIntentoVector = codigoIntento.to_s.split("")
+        codigoIntentoVector = codigoIntento.to_s.split("") 
+        
+        #puts(codigoIntentoVector)
         calcularToros(codigoIntentoVector)
         calcularVacas(codigoIntentoVector)
     end
@@ -49,7 +51,7 @@ class ToroVaca
         @cantidadToros=0
         @listaToros=[]    
         for i in (0..@codigo.size-1)
-            if @codigo[i]==vector[i]
+            if @codigo[i]==vector[i] && vector[i]!=-1
                 @cantidadToros=@cantidadToros+1
                 @listaToros.push(vector[i])
             end 
@@ -59,16 +61,27 @@ class ToroVaca
     def calcularVacas(vector)
         @cantidadVacas=0
         @listaVacas=[]
+        repetidos=0
         for i in (0..@codigo.size-1)    
             for j in (0..vector.size-1)
-                if i!=j
-                    if vector[i]==@codigo[j]
+                if i!=j  
+                    if vector[i]==@codigo[j] && vector[i]!=-1
                         @cantidadVacas=@cantidadVacas+1
                         @listaVacas.push(vector[i])
                     end
                 end
             end    
         end
+        for i in (0..vector.size-1)
+            for j in (1..vector.size-1)
+                if vector[i]==vector[j] && i!=j && vector[i]!=-1
+                    repetidos=repetidos+1
+                    vector[j]=-1
+                end
+            end
+        end
+        print("repetidos:", repetidos,"\n")
+        @cantidadVacas=@cantidadVacas-repetidos
     end
 
     def gameOver()
