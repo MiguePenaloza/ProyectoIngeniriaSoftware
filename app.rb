@@ -1,10 +1,12 @@
 require 'sinatra'
 require './lib/TorosVacas.rb'
+require './lib/cronometro.rb'
+
 def initialize()
     # @torovaca=ToroVaca.new("")
     # @contador=11
 end
-get '/' do
+get '/' do    
     $torovaca=ToroVaca.new("")
     $contador=11
     erb :index

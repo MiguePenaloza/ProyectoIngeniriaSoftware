@@ -1,5 +1,5 @@
 
-
+El tiempo transcurrido es: <%= $cronometro.tiempo_transcurrido().round(2)%> segundos.
 
 <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s%>
 <%$torovaca.intento(codigoIntento)%>
@@ -10,16 +10,18 @@
 <h3 style="text-align:center">Las vacas son : <%= $torovaca.getCantidadVacas()%></h3>
 <% if $torovaca.winner()!=true && $torovaca.gameOver() !=true %>
     <form style="text-align:center">
-        <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+        <input type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
     </form>
 <%end%>
 <%if $torovaca.winner()%>
     <h3 style="text-align:center">GANASTE!!!<h3>
+    Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.
     <form method="get" action="/" style="text-align:center">
         <button type="submit" >Inicio</button>
     </form>
 <% elsif $torovaca.gameOver()%>
     <h3 style="text-align:center">PERDISTE :(<h3>
+    Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.
     <form method="get" action="/" style="text-align:center">
         <button type="submit" >Inicio</button>
     </form>
