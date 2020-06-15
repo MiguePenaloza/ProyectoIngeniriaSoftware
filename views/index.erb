@@ -2,11 +2,44 @@
         <title>Toros y Vacas</title>
 </head>
 <h1 style="text-align:center">BIENVENIDOS</h1>
+<form id="configuracion" method='get' action='/configuracion' style="text-align:center">
+        <b>Menu de configuracion: </b>
+        <input type="submit" value="Menu" >
+</form>
+<%if (params[:nivel]).to_s != ""%>
+        <%$torovaca.setNivel((params[:nivel]).to_s) %>
+<%end%>
+<%$torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)%>
+
 <form id="menu" method='post' action='/juego' style="text-align:center">
         <h3>INTRODUZCA EL CODIGO</h3>
-        <input style="text-align:center" type="text" name="codigo1" maxlength="1" required="">
-        <input style="text-align:center" type="text" name="codigo2" maxlength="1" required="">
-        <input style="text-align:center" type="text" name="codigo3" maxlength="1" required="">
-        <input style="text-align:center" type="text" name="codigo4" maxlength="1" required="">
-        <input type="submit" value="Empezar Juego">
+        <% if $torovaca.getNivel()== "basico" %>
+                <input style="text-align:center" size ="5" type="text" name="codigo1" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo2" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo3" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo4" maxlength="1" required="">
+                <input type="submit" value="Empezar Juego" >
+        <%end%>
+        <% if $torovaca.getNivel()== "intermedio" %>
+                <input style="text-align:center" size ="5" type="text" name="codigo1" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo2" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo3" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo4" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo5" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo6" maxlength="1" required="">
+                <input type="submit" value="Empezar Juego" >
+        <%end%>
+        <% if $torovaca.getNivel()== "avanzado" %>
+                <input style="text-align:center" size ="5" type="text" name="codigo1" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo2" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo3" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo4" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo5" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo6" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo7" maxlength="1" required="">
+                <input style="text-align:center" size ="5" type="text" name="codigo8" maxlength="1" required="">
+                <input type="submit" value="Empezar Juego" >
+        <%end%>
 </form>
+
+

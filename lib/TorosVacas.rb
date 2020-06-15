@@ -5,6 +5,8 @@ class ToroVaca
         @cantidadToros = 0
         @cantidadVacas = 0
         @numeroIntentos = 0 
+        @numeroIntentosPermitidos=10
+        @nivel="basico"
     end
 
     #------------------- BEGIN GET's -----------------------------
@@ -25,6 +27,12 @@ class ToroVaca
     def getNumeroIntentos
         return @numeroIntentos
     end
+    def getNivel
+        return @nivel
+    end
+    def getNumeroIntentosPermitidos()
+        return @numeroIntentosPermitidos
+    end
     #--------------------- END Get's -----------------------------
 
     #------------------- BEGIN Set's -----------------------------
@@ -34,6 +42,12 @@ class ToroVaca
 
     def incrementarNumeroIntentos
         @numeroIntentos += 1
+    end
+    def setNivel(nivel)
+        @nivel=nivel
+    end
+    def setNumeroItentosPermitidos(intentos)
+        @numeroIntentosPermitidos=intentos
     end
     #--------------------- END Set's -----------------------------
 
@@ -85,12 +99,19 @@ class ToroVaca
     end
 
     def gameOver()
-        return @numeroIntentos==10
+        return @numeroIntentos==@numeroIntentosPermitidos
     end
 
     def winner()
         #return getCantidadToros().size == 4
-        return @cantidadToros == 4
+        if @nivel=="basico"
+            return @cantidadToros == 4
+        elsif @nivel=="intermedio"
+            return @cantidadToros==6
+            elsif @nivel=="avanzado"
+                return @cantidadToros==8
+        
+        end
     end
     #--------------------- END Functions ------------------------------ 
 end
