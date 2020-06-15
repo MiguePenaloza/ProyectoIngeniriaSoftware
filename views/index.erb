@@ -15,37 +15,37 @@
 <form id="menu" method='post' action='/juego' style="text-align:center">
         <h3>INTRODUZCA EL CODIGO</h3>
         <% if $torovaca.getNivel()== "basico" %>
-                <input type="submit" onclick="randBas()" value="Generar número aleatorio">
-                <input style="text-align:center" size ="5" id="bc1" type="text" name="codigo1" maxlength="1">
-                <input style="text-align:center" size ="5" id="bc2" type="text" name="codigo2" maxlength="1">
-                <input style="text-align:center" size ="5" id="bc3" type="text" name="codigo3" maxlength="1">
-                <input style="text-align:center" size ="5" id="bc4" type="text" name="codigo4" maxlength="1">
+                <input type="submit" onclick="randBas()" value="Generar codigo aleatorio">
+                <input style="text-align:center" size ="5" id="bc1" type="text" name="codigo1" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="bc2" type="text" name="codigo2" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="bc3" type="text" name="codigo3" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="bc4" type="text" name="codigo4" maxlength="1" required="">
                 <input type="submit" value="Empezar Juego">
         <%end%>
 
 
         <% if $torovaca.getNivel()== "intermedio" %>
-                <input type="submit" onclick="randInt()" value="Generar número aleatorio">
-                <input style="text-align:center" size ="5" id="i1" type="text" name="codigo1" maxlength="1" >
-                <input style="text-align:center" size ="5" id="i2" type="text" name="codigo2" maxlength="1" >
-                <input style="text-align:center" size ="5" id="i3" type="text" name="codigo3" maxlength="1" >
-                <input style="text-align:center" size ="5" id="i4" type="text" name="codigo4" maxlength="1" >
-                <input style="text-align:center" size ="5" id="i5" type="text" name="codigo5" maxlength="1" >
-                <input style="text-align:center" size ="5" id="i6" type="text" name="codigo6" maxlength="1" >
+                <input type="submit" onclick="randInt()" value="Generar codigo aleatorio">
+                <input style="text-align:center" size ="5" id="i1" type="text" name="codigo1" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="i2" type="text" name="codigo2" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="i3" type="text" name="codigo3" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="i4" type="text" name="codigo4" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="i5" type="text" name="codigo5" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="i6" type="text" name="codigo6" maxlength="1" required="">
                 <input type="submit" value="Empezar Juego">
         <%end%>
 
 
         <% if $torovaca.getNivel()== "avanzado" %>
-                <input type="submit" onclick="randAvan()" value="Generar número aleatorio">
-                <input style="text-align:center" size ="5" id="a1" type="text" name="codigo1" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a2" type="text" name="codigo2" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a3" type="text" name="codigo3" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a4" type="text" name="codigo4" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a5" type="text" name="codigo5" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a6" type="text" name="codigo6" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a7" type="text" name="codigo7" maxlength="1" >
-                <input style="text-align:center" size ="5" id="a8" type="text" name="codigo8" maxlength="1" >
+                <input type="submit" onclick="randAvan()" value="Generar codigo aleatorio">
+                <input style="text-align:center" size ="5" id="a1" type="text" name="codigo1" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a2" type="text" name="codigo2" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a3" type="text" name="codigo3" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a4" type="text" name="codigo4" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a5" type="text" name="codigo5" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a6" type="text" name="codigo6" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a7" type="text" name="codigo7" maxlength="1" required="">
+                <input style="text-align:center" size ="5" id="a8" type="text" name="codigo8" maxlength="1" required="">
                 <input type="submit" value="Empezar Juego" >
         <%end%>
 </form>
