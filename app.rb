@@ -13,8 +13,25 @@ post '/juego' do
     erb :juego
 end
 
+
 post '/intento' do
     erb :intento
+end
+
+
+get '/juego' do
+    $contador -= -1
+    erb :juego
+end
+
+get '/intento' do
+    erb :intento
+end
+get '/resultadoJuegoGanado' do    
+    erb :resultadoganaste
+end
+get '/resultadoJuegoPerdido' do    
+    erb :resultadoperdiste
 end
 
 get '/configuracion' do
