@@ -1,4 +1,6 @@
 <!--<link id="template-file" href="../lib/TorosVacas.rb" rel="import" /> -->
+<link rel="stylesheet" href="/css/stylesheets.css">
+
 <h1 style="text-align:center">COMIENZA EL JUEGO<h1>
 <%$torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s)%>
 <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
@@ -8,9 +10,24 @@
         <input style="text-align:center" type="text" name="valor3" maxlength="1" required="">
         <input style="text-align:center" type="text" name="valor4" maxlength="1" required="">
         <input type="submit" value="aceptar"> 
+        <input type="reset">
 </form>
 
+<div>
+  <form style="text-align:center">
+    <input type="button" onclick="myFunction()" class="button button3" value="Abandonar la partida"> 
+  </form>
+</div>
 
+
+<script>
+  function myFunction() {
+    var respuesta = confirm("Estas seguro que deseas abandonar la partida? No se guardara tu progreso y perderas el juego!!!");
+    if (respuesta == true) {
+      window.location.href = '/';
+    }
+  }
+</script>
 
 
 
