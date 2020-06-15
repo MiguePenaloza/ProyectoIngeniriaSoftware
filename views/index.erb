@@ -9,8 +9,9 @@
 <%if (params[:nivel]).to_s != ""%>
         <%$torovaca.setNivel((params[:nivel]).to_s) %>
 <%end%>
-<%$torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)%>
-
+<%if (params[:numeroIntentos]).to_i != 0%>
+        <%$torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)%>
+<%end%>
 <form id="menu" method='post' action='/juego' style="text-align:center">
         <h3>INTRODUZCA EL CODIGO</h3>
         <% if $torovaca.getNivel()== "basico" %>

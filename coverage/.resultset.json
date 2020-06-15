@@ -190,7 +190,7 @@
   },
   "RSpec": {
     "coverage": {
-      "/home/micky/University/Ingenieria de Software/ProyectoIngeniriaSoftware/spec/TorosVacas_spec.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto/spec/TorosVacas_spec.rb": {
         "lines": [
           null,
           1,
@@ -250,7 +250,7 @@
           null
         ]
       },
-      "/home/micky/University/Ingenieria de Software/ProyectoIngeniriaSoftware/lib/TorosVacas.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto/lib/TorosVacas.rb": {
         "lines": [
           1,
           null,
@@ -259,6 +259,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null,
           null,
           null,
@@ -279,6 +281,12 @@
           1,
           1,
           null,
+          1,
+          0,
+          null,
+          1,
+          0,
+          null,
           null,
           null,
           null,
@@ -289,12 +297,20 @@
           1,
           11,
           null,
+          1,
+          0,
+          null,
+          1,
+          0,
+          null,
           null,
           null,
           null,
           1,
           11,
           11,
+          null,
+          null,
           11,
           11,
           null,
@@ -311,6 +327,7 @@
           null,
           null,
           1,
+          13,
           13,
           13,
           13,
@@ -323,6 +340,16 @@
           null,
           null,
           null,
+          13,
+          52,
+          156,
+          0,
+          0,
+          null,
+          null,
+          null,
+          13,
+          13,
           null,
           null,
           1,
@@ -332,12 +359,19 @@
           1,
           null,
           1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1592172662
+    "timestamp": 1592195776
   }
 }
