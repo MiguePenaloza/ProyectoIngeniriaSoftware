@@ -9,7 +9,7 @@ x = x.to_s.split("")
 
 # @prueba.calcularToros(x)
 # @prueba.calcularVacas(x)
-@prueba.intento("1324")
+@prueba.intento("4444")
 puts("Los Toros son:", @prueba.getCantidadToros)
 puts("Los Vacas son:", @prueba.getCantidadVacas)
 # puts("cantidad de toros: ",@prueba.getCantidadToros)
