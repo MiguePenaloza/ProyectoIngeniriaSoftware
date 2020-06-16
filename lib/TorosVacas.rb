@@ -94,7 +94,6 @@ class ToroVaca
                 end
             end
         end
-        print("repetidos:", repetidos,"\n")
         @cantidadVacas=@cantidadVacas-repetidos
     end
 
