@@ -14,16 +14,24 @@ get '/' do
     $jugador2=Jugador.new
     erb :index
 end
-
-post '/juego' do
-   
-    erb :juego
+get '/configuracion' do
+    erb :configuracion
 end
 
+post '/juego' do
+    erb :juego
+end
 
 post '/intento' do
     erb :intento
 end
+
+get '/ranking' do
+    erb :ranking
+end
+
+
+
 
 
 get '/juego' do
@@ -41,6 +49,3 @@ get '/resultadoJuegoPerdido' do
     erb :resultadoperdiste
 end
 
-get '/configuracion' do
-    erb :configuracion
-end

@@ -3,6 +3,7 @@ class Jugador
         @nickname=""
         @puntuacion=0
         @tiempo=0
+        @puntuacionTotal=0
     end
     def setNickName(name)
         @nickname=name
@@ -13,6 +14,9 @@ class Jugador
     def setTiempo(tiempo)
         @tiempo=tiempo
     end
+    def setPuntuacionTotal
+        @puntuacionTotal=@puntuacion+@tiempo
+    end
     def getNickName
         return @nickname
     end
@@ -22,4 +26,9 @@ class Jugador
     def getTiempo
         return @tiempo
     end
+    def getPuntuacionTotal
+        return @puntuacionTotal
+    end
+    
+  
 end

@@ -17,37 +17,34 @@ $jugadores=Jugadores.new
 $jugador.setNickName("tono")
 $jugador.setPuntuacion(10)
 $jugador.setTiempo(24.4)
-
+$jugador.setPuntuacionTotal()
 
 $jugadores.setListaJugadores($jugador)
+
 $jugador= Jugador.new
 $jugador.setNickName("carlos")
 $jugador.setPuntuacion(5)
 $jugador.setTiempo(17.6)
+$jugador.setPuntuacionTotal()
 
 $jugadores.setListaJugadores($jugador)
-# jugador3= Jugador.new
-# jugador3.setNickName("miguel")
-# jugador3.setPuntuacion(7)
-# jugador3.setTiempo(10.2)
 
-# jugador4= Jugador.new
-# jugador4.setNickName("Diego")
-# jugador4.setPuntuacion(12)
-# jugador4.setTiempo(12.2)
+$jugador= Jugador.new
+$jugador.setNickName("miguel")
+$jugador.setPuntuacion(4)
+$jugador.setTiempo(12.6)
+$jugador.setPuntuacionTotal()
 
-# @jugadores=Jugadores.new
-# @jugadores.setListaJugadores(@jugador)
-# @jugadores.setListaJugadores(jugador2)
-# @jugadores.setListaJugadores(jugador3)
-# @jugadores.setListaJugadores(jugador4)
+$jugadores.setListaJugadores($jugador)
 
-$lista=$jugadores.getListaJugadores
-for i in (0..$lista.size-1)
-    puts($lista[i].getNickName())
-    puts($lista[i].getPuntuacion)
-    puts($lista[i].getTiempo)
-end
+$jugadores.ordenarJugadores
+$jugadores.mostrarLista
+# $lista=$jugadores.getListaJugadores
+# for i in (0..$lista.size-1)
+#     puts($lista[i].getNickName())
+#     puts($lista[i].getPuntuacion)
+#     puts($lista[i].getTiempo)
+# end
 
 
 

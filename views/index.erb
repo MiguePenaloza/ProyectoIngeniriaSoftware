@@ -70,13 +70,10 @@
                         <input type="submit" value="Empezar Juego" >
                 <%end%>
         </form>
+        <form class="form" id="ranking" method='get' action='/ranking' style="text-align:center">
+                <input type="submit" value="Ranking" >
+        </form>
 
-        <%=$lista=@jugadores.getListaJugadores%>
-        <%for i in (0..$lista.size-1)%>
-                <%=$lista[i].getNickName%>
-                <%=$lista[i].getPuntuacion%>
-                <%=$lista[i].getTiempo%>
-        <%end%>
 </body>
 
 <script>
