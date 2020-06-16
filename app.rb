@@ -24,7 +24,7 @@ post '/juego' do
 end
 
 post '/intento' do
-    erb :intento
+     erb :intento
 end
 
 get '/ranking' do
@@ -32,21 +32,17 @@ get '/ranking' do
 end
 
 
-
-
-
 get '/juego' do
-    $contador -= -1
     erb :juego
 end
 
 get '/intento' do
     erb :intento
 end
-get '/resultadoJuegoGanado' do    
+get '/resultadoganaste' do
     erb :resultadoganaste
 end
-get '/resultadoJuegoPerdido' do    
+get '/resultadoperdiste' do
     erb :resultadoperdiste
 end
 

@@ -1,28 +1,80 @@
 <head>
         <title>Toros y Vacas</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/stylesheets.css">
 </head>
-<h1 style="text-align:center">Menu de Configuracion</h1>
-<form id="menu" method='get' action='/' style="text-align:center">
-    <b>Seleccione el nivel del Juego: </b>
-    <input type="radio" id="basico" name="nivel" value="basico" style="text-align:center" checked>
-    <label for="basico">Basico</label>
-    <input type="radio" id="intermedio" name="nivel" value="intermedio" style="text-align:center">
-    <label for="intermedio">Intermedio</label>
-    <input type="radio" id="avanzado" name="nivel" value="avanzado" style="text-align:center">
-    <label for="avanzado">Avanzado</label>
+
+<div class="header">
+    <div class="page-header">
+        <h1 class="first-title">
+            <div>
+                <span>
+                    <img src="https://image.flaticon.com/icons/svg/2298/2298491.svg" width="80" height="80">
+                </span>
+                <span>
+                    TOROS Y VACAS
+                </span>
+                <span>
+                    <img src="https://image.flaticon.com/icons/svg/2913/2913416.svg" width="80" height="80">
+                </span>
+            </div>
+        </h1>
+    </div>
+</div>
+
+<div class="cont col-sm-10">
+    <h1 style="text-align:center">Menu de Configuracion</h1>
     <br>
-    <br>
-    <b>Numero de intentos permitidos: </b>
-    <input type="number" name="numeroIntentos" min="1" max="20" value="10" required="">
-    
-    <br>
-    <br>
-    <b>Seleccione el tipo de codigo: </b>
-    <input type="radio" id="numeros" name="tipoCodigo" value="numeros" style="text-align:center" checked>
-    <label for="numeros">Numero</label>
-    <input type="radio" id="colores" name="tipoCodigo" value="colores" style="text-align:center">
-    <label for="colores">Colores</label>
-    <br>
-    <br>
-    <input type="submit" value="Aceptar">
-</form>
+    <form id="menu" method='get' action='/' style="text-align:center">
+        <b class="col-sm-10">Seleccione el nivel del Juego: </b>
+        <div class="col-sm-10">
+            <input class="col-sm-10"type="radio" id="basico" name="nivel" value="basico" style="text-align:center" checked>
+            <label class="col-sm-10"for="basico">Basico</label>
+            <input class="col-sm-10"type="radio" id="intermedio" name="nivel" value="intermedio" style="text-align:center">
+            <label class="col-sm-10"for="intermedio">Intermedio</label>
+            <input class="col-sm-10"type="radio" id="avanzado" name="nivel" value="avanzado" style="text-align:center">
+            <label class="col-sm-10"for="avanzado">Avanzado</label>
+            <br>
+            <br>
+            <b>Numero de intentos permitidos: </b>
+            <input class="col-sm-10"type="number" name="numeroIntentos" min="1" max="20" value="10" required="">
+            
+            <br>
+            <br>
+            <b>Seleccione el tipo de codigo: </b>
+            <input class="col-sm-10"type="radio" id="numeros" name="tipoCodigo" value="numeros" style="text-align:center" checked>
+            <label class="col-sm-10"for="numeros">Numero</label>
+            <input class="col-sm-10"type="radio" id="colores" name="tipoCodigo" value="colores" style="text-align:center">
+            <label class="col-sm-10"for="colores">Colores</label>
+            <br>
+            <br>
+            <input class="col-sm-10"type="submit" value="Aceptar">
+        </div>
+        <br>
+        <br>
+    </form>
+</div>
+
+<footer class="panel-footer">
+    <div class="container">
+        <div class="row">
+            <section id="Integrantes" class="col-sm-6">
+              <p>Integrantes:</p>
+              <p>Diego Nicolas Peñaranda Antenzana</p>
+              <p>Miguel Alejandro Peñaloza Pachecho</p>
+              <p>Jose Carlos Olivera Peredo</p>
+              <p>Antonio Medina Padilla</p>
+              <hr class="visible-xs">
+            </section>
+            <section id="Materia" class="col-sm-6">
+              <p>Materia:</p>
+              <p>Ingenieria de Software</p>
+              <p>Semestre:</p>
+                <p>1/2020</p>
+                <p>Universidad Católica Boliviana "San Pablo"</p>
+              <hr class="visible-xs">
+            </section>
+          </div>
+          <div class="text-center" id="cr">&copy; Copyright Reserved</div>
+        </div>
+</footer>
