@@ -1,5 +1,5 @@
 Given('visito la pagina de juego') do
-    visit '/juego'
+    visit '/juego/'
   end
   
   Given('pongo el {string} en el input {string}') do |string, string2|

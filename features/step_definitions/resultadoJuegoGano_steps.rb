@@ -1,7 +1,7 @@
 Given('visito la pagina de resultado') do
-    visit '/resultadojuego'
+    visit '/resultadoganaste'
   end
   
   Then('veo el mensaje de {string}') do |string|
-    visit '/resultadojuego'
+    visit '/resultadoganaste'
   end

@@ -10,7 +10,12 @@
   <h1 style="text-align:center">COMIENZA EL JUEGO</h1>
   <% if $torovaca.getNivel()== "basico"
     $torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s)%>
-    <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <%if params[:nickname2]!=""%>
+      <%$jugador2.setNickName(params[:nickname2].to_s)%>
+      <h4 style="text-align:center"><%=$jugador2.getNickName%> Intente Adivinar el Codigo</h4>
+    <%else%>
+      <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <%end%>
     
     <form id="juego" method='post' action="/intento" style="text-align:center">
             <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
@@ -23,7 +28,12 @@
   <%end%>
   <% if $torovaca.getNivel()== "intermedio"
     $torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s+params[:codigo6].to_s)%>
-    <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <%if params[:nickname2]!=""%>
+      <%$jugador2.setNickName(params[:nickname2].to_s)%>
+      <h4 style="text-align:center"><%=$jugador2.getNickName%> Intente Adivinar el Codigo</h4>
+    <%else%>
+      <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <%end%>
     <form id="juego" method='post' action="/intento" style="text-align:center">
             <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
             <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
@@ -37,7 +47,12 @@
   <%end%>
   <% if $torovaca.getNivel()== "avanzado"
     $torovaca.setCodigo(params[:codigo1].to_s+params[:codigo2].to_s+params[:codigo3].to_s+params[:codigo4].to_s+params[:codigo5].to_s+params[:codigo6].to_s+params[:codigo7].to_s+params[:codigo8].to_s)%>
-    <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <%if params[:nickname2]!=""%>
+      <%$jugador2.setNickName(params[:nickname2].to_s)%>
+      <h4 style="text-align:center"><%=$jugador2.getNickName%> Intente Adivinar el Codigo</h4>
+    <%else%>
+      <h4 style="text-align:center">INTENTE ADIVINAR EL CODIGO</h4>
+    <%end%>
     <form id="juego" method='post' action="/intento" style="text-align:center">
             <input style="text-align:center" size ="5" type="text" name="valor1" maxlength="1" required="">
             <input style="text-align:center" size ="5" type="text" name="valor2" maxlength="1" required="">
