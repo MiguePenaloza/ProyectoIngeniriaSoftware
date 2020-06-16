@@ -40,7 +40,11 @@
     <%if $torovaca.winner()%>
         <h3 style="text-align:center">GANASTE!!!<h3>
         Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.
-        
+        <%if params[:nickname2]!=""%>
+            <%$jugador2.setPuntuacion($torovaca.getNumeroIntentos())%>
+            <%$jugador2.setTiempo($tiempo_total)%>
+            <%@jugadores.setListaJugadores($jugador2)%>
+        <%end%>
         <form method="get" action="/" style="text-align:center">
             <button type="submit" >Inicio</button>
         </form>
@@ -52,7 +56,12 @@
         </form>
     <%end%>
 
-    
+    <%=$lista=@jugadores.getListaJugadores%>
+    <%for i in (0..$lista.size-1)%>
+        <%=$lista[i].getNickName%>
+        <%=$lista[i].getPuntuacion%>
+        <%=$lista[i].getTiempo%>
+    <%end%>
 </body>
 <footer>
 

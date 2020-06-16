@@ -1,16 +1,17 @@
 require 'sinatra'
 require './lib/TorosVacas.rb'
 require './lib/cronometro.rb'
-
+require './lib/jugador.rb'
+require './lib/jugadores.rb'
 
 def initialize()
-    #@jugadores=Jugadores.new
+    @jugadores=Jugadores.new
 end
 
 get '/' do    
     $torovaca=ToroVaca.new("")
-    #$jugador1=Jugador.new
-    #$jugador2=Jugador.new
+    $jugador1=Jugador.new
+    $jugador2=Jugador.new
     erb :index
 end
 

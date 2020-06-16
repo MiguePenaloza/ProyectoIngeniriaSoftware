@@ -71,7 +71,12 @@
                 <%end%>
         </form>
 
-       
+        <%=$lista=@jugadores.getListaJugadores%>
+        <%for i in (0..$lista.size-1)%>
+                <%=$lista[i].getNickName%>
+                <%=$lista[i].getPuntuacion%>
+                <%=$lista[i].getTiempo%>
+        <%end%>
 </body>
 
 <script>
