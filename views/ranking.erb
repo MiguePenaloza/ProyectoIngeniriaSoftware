@@ -2,9 +2,10 @@
  <%@jugadores.ordenarJugadores%>
  <%$lista=@jugadores.getListaJugadores%>
 <body >
-    <form style="text-align:center">
-        <table class="ranking" style="text-align:center" >
-        <tr>
+    <div style="text-align:center">    
+        <table class="ranking" style="text-align:center" align="center">
+        <tr >
+            <th scope="row">Nº</th>
             <th >Nombre</th>
             <th>Numero Intentos</th>
             <th>Tiempo</th>
@@ -12,12 +13,12 @@
         </tr>
         <%for i in (0..$lista.size-1)%>
             <tr>
+                <th><%=i+1%></th>
                 <td><%=$lista[i].getNickName%></td>
                 <td><%=$lista[i].getPuntuacion%></td>
                 <td><%=$lista[i].getTiempo%></td>
                 <td><%=$lista[i].getPuntuacionTotal%></td>
             </tr>
         <%end%>
-        </form>
     </div>
  </body>
