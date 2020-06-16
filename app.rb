@@ -8,7 +8,8 @@ def initialize()
     @jugadores=Jugadores.new
 end
 
-get '/' do    
+get '/' do 
+    $intentos_realizados = []   
     $torovaca=ToroVaca.new("")
     $jugador1=Jugador.new
     $jugador2=Jugador.new

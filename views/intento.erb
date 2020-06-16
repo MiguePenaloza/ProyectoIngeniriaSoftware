@@ -24,6 +24,7 @@
     <%end%>
 
     <%$torovaca.intento(codigoIntento)%>
+    <%$intentos_realizados.push(codigoIntento)%>
 
 
     <h3 style="text-align:center">Numero de intentos: <%=$torovaca.getNumeroIntentos()%><h3>
@@ -38,8 +39,9 @@
     <%end%>
 
     <%if $torovaca.winner()%>
-        <h3 style="text-align:center">GANASTE!!!<h3>
-        Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.
+        <h3 style="text-align:center">GANASTE!!!</h3>
+        <p>Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.</p>
+        <p>El codigo secreto era: <%= $torovaca.getCodigo()%> </p>
         <%# <%if params[:nickname2]!=""%> 
         <%if $jugador2.getNickName!=""%>
             <%$jugador2.setPuntuacion($torovaca.getNumeroIntentos())%>
@@ -51,20 +53,22 @@
             <button type="submit" >Inicio</button>
         </form>
     <% elsif $torovaca.gameOver()%>
-        <h3 style="text-align:center">PERDISTE :(<h3>
-        Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.
+        <h3 style="text-align:center">PERDISTE :(</h3>
+        <p>Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos. </p>
+        <p>El codigo secreto era: <%= $torovaca.getCodigo()%> </p>
         <form method="get" action="/" style="text-align:center">
             <button type="submit" >Inicio</button>
         </form>
     <%end%>
+    <div>
+        <h3>Lista de los intentos realizados a lo largo de toda la partida</h3>
+        <ol>
+            <% for i in 0..$intentos_realizados.size - 1%>
+                <li><%= $intentos_realizados[i]%></li>
+            <%end%>     
+        </ol>
+    </div>
 
-    <%=$lista=@jugadores.getListaJugadores%>
-    <%for i in (0..$lista.size-1)%>
-        <%=$lista[i].getNickName%>
-        <%=$lista[i].getPuntuacion%>
-        <%=$lista[i].getTiempo%>
-        <%=$lista[i].getPuntuacionTotal%>
-    <%end%>
 </body>
 <footer>
 
