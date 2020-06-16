@@ -1,8 +1,19 @@
 <head>
         <title>Toros y Vacas</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/stylesheets.css">
 </head>
 
 <body>
+
+        <div class="container p-3 my-3 bg-dark text-white text-center">
+                <div class="page-header">
+                        <h1 class="first-title">
+                                SONGS WEB APPLICATION
+                        </h1>
+                </div>
+        </div>
+
         <h1 style="text-align:center">BIENVENIDOS</h1>
 
         <form id="configuracion" method='get' action='/configuracion' style="text-align:center">
@@ -18,7 +29,7 @@
                 $torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)
         end%>
 
-        <form id="menu" method='post' action='/juego' style="text-align:center">
+        <form class="form" id="menu" method='post' action='/juego' style="text-align:center">
                 <h3>INTRODUZCA EL CODIGO</h3>
 
                 <% if $torovaca.getNivel()== "basico" %>
