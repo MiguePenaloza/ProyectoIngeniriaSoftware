@@ -627,3 +627,183 @@ D, [2020-06-16T02:39:15.389819 #18360] DEBUG -- : REQUESTING PAGE: GET /resultad
 D, [2020-06-16T02:39:15.395145 #18360] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
 D, [2020-06-16T02:39:15.399181 #18360] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
 D, [2020-06-16T02:39:15.400368 #18360] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T02:47:16.875012 #23212] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T02:47:16.970258 #23212] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T02:47:16.983345 #23212] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T02:47:16.989610 #23212] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T02:47:17.008617 #23212] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T02:47:17.013022 #23212] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T02:47:17.024190 #23212] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T02:47:17.028075 #23212] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T02:47:17.031739 #23212] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T02:47:17.039492 #23212] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T02:47:17.045638 #23212] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T02:47:17.057058 #23212] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T02:47:17.063747 #23212] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T02:47:17.075826 #23212] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T02:47:17.095589 #23212] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T02:47:17.105102 #23212] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T02:47:17.108654 #23212] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T02:47:17.116807 #23212] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:04:42.072572 #16132] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:04:42.587257 #16132] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:04:42.775068 #16132] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:04:42.780489 #16132] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:04:42.786412 #16132] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T03:04:42.880181 #16132] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:04:43.074239 #16132] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:04:43.081884 #16132] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:04:43.100323 #16132] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:04:43.104420 #16132] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:04:43.114914 #16132] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:04:43.120932 #16132] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:04:43.133469 #16132] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:04:43.137749 #16132] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:04:43.282097 #16132] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:04:43.295486 #16132] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:04:43.301884 #16132] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:04:43.315190 #16132] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:21:04.332983 #16232] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:21:04.459132 #16232] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:21:04.493861 #16232] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:21:04.499588 #16232] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:21:05.139511 #16232] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T03:21:05.152294 #16232] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:21:05.180734 #16232] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:21:05.185329 #16232] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:21:05.201848 #16232] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:21:05.215244 #16232] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:21:05.228479 #16232] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:21:05.247375 #16232] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:21:05.256645 #16232] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:21:05.296066 #16232] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:21:05.320316 #16232] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:21:05.328857 #16232] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:21:05.333548 #16232] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:21:05.335950 #16232] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:29:46.671956 #24260] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:29:46.793315 #24260] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:29:46.826195 #24260] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:29:46.833308 #24260] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:29:46.846294 #24260] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T03:29:46.876470 #24260] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:29:46.903562 #24260] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:29:46.907540 #24260] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:29:46.928260 #24260] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:29:46.945210 #24260] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:29:46.960376 #24260] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:29:46.978512 #24260] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:29:46.993940 #24260] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:29:47.010748 #24260] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:29:47.035918 #24260] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:29:47.038892 #24260] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:29:47.043354 #24260] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:29:47.045486 #24260] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:30:53.279845 #20188] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:30:53.391619 #20188] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:30:53.413747 #20188] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:30:53.426924 #20188] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:30:53.442774 #20188] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-16T03:30:56.241766 #20188] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:30:56.256285 #20188] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:30:56.260253 #20188] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:30:56.274043 #20188] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:30:56.278078 #20188] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:30:56.286421 #20188] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:30:56.291567 #20188] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:30:56.294989 #20188] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:30:56.303606 #20188] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:30:56.309660 #20188] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:30:56.311731 #20188] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:30:56.320599 #20188] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:30:56.322863 #20188] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:31:16.896951 #22448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.001437 #22448] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:31:17.017917 #22448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.035940 #22448] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:31:17.047290 #22448] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.060395 #22448] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.075160 #22448] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:31:17.082024 #22448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:31:17.096559 #22448] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.105907 #22448] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:31:17.115335 #22448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:31:17.143694 #22448] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.148613 #22448] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:31:17.157285 #22448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:31:17.164589 #22448] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.166787 #22448] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:31:17.175947 #22448] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:31:17.178636 #22448] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:40:04.143663 #26244] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.276390 #26244] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:04.304181 #26244] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.309797 #26244] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:04.320007 #26244] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.339204 #26244] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.422495 #26244] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:40:04.433012 #26244] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:04.499027 #26244] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.503307 #26244] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:40:04.507817 #26244] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:04.519916 #26244] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.523969 #26244] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:40:04.532778 #26244] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:04.540594 #26244] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.542859 #26244] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:40:04.553299 #26244] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:40:04.555581 #26244] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:40:35.707995 #26296] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:40:35.809964 #26296] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:35.836084 #26296] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:40:35.840922 #26296] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:35.853579 #26296] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-16T03:40:38.409015 #26296] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:40:38.428054 #26296] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:40:38.435271 #26296] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:38.442312 #26296] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:40:38.452728 #26296] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:40:38.456513 #26296] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:38.475360 #26296] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:40:38.487143 #26296] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:40:38.490953 #26296] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:40:38.503686 #26296] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:40:38.506268 #26296] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:40:38.519372 #26296] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:40:38.522126 #26296] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:42:25.903765 #304] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.013268 #304] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:42:26.033506 #304] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.038871 #304] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:42:26.049878 #304] DEBUG -- : REQUESTING PAGE: GET /juego.erb with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.066912 #304] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.082868 #304] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:42:26.086754 #304] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:42:26.098857 #304] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.103145 #304] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:42:26.107003 #304] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:42:26.117370 #304] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.121174 #304] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:42:26.130666 #304] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:42:26.153055 #304] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.155200 #304] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:42:26.165136 #304] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:42:26.167360 #304] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-16T03:50:12.464027 #22680] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.572132 #22680] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:50:12.592480 #22680] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.601279 #22680] DEBUG -- : REQUESTING PAGE: POST /juego with {"nickname1"=>"", "nickname2"=>"", "codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:50:12.606889 #22680] DEBUG -- : REQUESTING PAGE: GET /juego/ with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.621225 #22680] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.636453 #22680] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:50:12.640958 #22680] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:50:12.654380 #22680] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.658681 #22680] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:50:12.668090 #22680] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:50:12.673732 #22680] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.677531 #22680] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10", "tipoCodigo"=>"numeros"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-16T03:50:12.683812 #22680] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-16T03:50:12.709652 #22680] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.716247 #22680] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-16T03:50:12.721896 #22680] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-16T03:50:12.723885 #22680] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}

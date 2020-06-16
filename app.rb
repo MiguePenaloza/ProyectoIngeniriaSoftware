@@ -23,16 +23,13 @@ post '/juego' do
     erb :juego
 end
 
-post '/intento' do
-    erb :intento
-end
+# post '/intento' do
+#     erb :intento
+# end
 
 get '/ranking' do
     erb :ranking
 end
-
-
-
 
 
 get '/juego' do
@@ -43,10 +40,10 @@ end
 get '/intento' do
     erb :intento
 end
-get '/resultadoJuegoGanado' do    
+get '/resultadoganaste' do
     erb :resultadoganaste
 end
-get '/resultadoJuegoPerdido' do    
+get '/resultadoperdiste' do
     erb :resultadoperdiste
 end
 

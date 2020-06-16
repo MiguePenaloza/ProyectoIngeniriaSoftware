@@ -19,10 +19,10 @@ class Jugadores
     end
     def mostrarLista
         for i in (0..@listaJugadores.size-1)
-            puts(@listaJugadores[i].getNickName)
-            puts(@listaJugadores[i].getPuntuacion)
-            puts(@listaJugadores[i].getTiempo)
-            puts(@listaJugadores[i].getPuntuacionTotal)
+            # puts(@listaJugadores[i].getNickName)
+            # puts(@listaJugadores[i].getPuntuacion)
+            # puts(@listaJugadores[i].getTiempo)
+            # puts(@listaJugadores[i].getPuntuacionTotal)
         end
     end
 end
