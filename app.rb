@@ -2,14 +2,20 @@ require 'sinatra'
 require './lib/TorosVacas.rb'
 require './lib/cronometro.rb'
 
+
+def initialize()
+    #@jugadores=Jugadores.new
+end
+
 get '/' do    
     $torovaca=ToroVaca.new("")
-    $contador=11
+    #$jugador1=Jugador.new
+    #$jugador2=Jugador.new
     erb :index
 end
 
 post '/juego' do
-    $contador -= -1
+   
     erb :juego
 end
 

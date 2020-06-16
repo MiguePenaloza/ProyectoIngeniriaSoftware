@@ -536,3 +536,16 @@ D, [2020-06-15T20:47:28.957109 #26612] DEBUG -- : REQUESTING PAGE: GET /resultad
 D, [2020-06-15T20:47:28.958559 #26612] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
 D, [2020-06-15T20:47:28.962743 #26612] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
 D, [2020-06-15T20:47:28.973823 #26612] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}
+D, [2020-06-15T21:02:43.959004 #45025] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-15T21:02:44.003520 #45025] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"1", "codigo2"=>"2", "codigo3"=>"3", "codigo4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-15T21:02:44.012358 #45025] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2020-06-15T21:02:44.017831 #45025] DEBUG -- : REQUESTING PAGE: POST /juego with {"codigo1"=>"", "codigo2"=>"", "codigo3"=>"", "codigo4"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-15T21:02:44.023854 #45025] DEBUG -- : REQUESTING PAGE: GET /juego with {} and HTTP headers {}
+D, [2020-06-15T21:02:44.037005 #45025] DEBUG -- : REQUESTING PAGE: POST /intento with {"valor1"=>"1", "valor2"=>"2", "valor3"=>"3", "valor4"=>"4"} and HTTP headers {"HTTP_REFERER"=>"/juego"}
+D, [2020-06-15T21:02:44.041753 #45025] DEBUG -- : REQUESTING PAGE: GET /configuracion with {} and HTTP headers {}
+D, [2020-06-15T21:02:44.051556 #45025] DEBUG -- : REQUESTING PAGE: GET / with {"nivel"=>"basico", "numeroIntentos"=>"10"} and HTTP headers {"HTTP_REFERER"=>"/configuracion"}
+D, [2020-06-15T21:02:44.057452 #45025] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2020-06-15T21:02:44.065062 #45025] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {}
+D, [2020-06-15T21:02:44.067794 #45025] DEBUG -- : REQUESTING PAGE: GET /resultadoganaste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoganaste"}
+D, [2020-06-15T21:02:44.070723 #45025] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {}
+D, [2020-06-15T21:02:44.072050 #45025] DEBUG -- : REQUESTING PAGE: GET /resultadoperdiste with {} and HTTP headers {"HTTP_REFERER"=>"/resultadoperdiste"}

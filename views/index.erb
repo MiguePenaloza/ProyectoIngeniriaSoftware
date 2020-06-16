@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
         <div class="container p-3 my-3 bg-dark text-white text-center">
                 <div class="page-header">
                         <h1 class="first-title">
@@ -30,6 +29,12 @@
         end%>
 
         <form class="form" id="menu" method='post' action='/juego' style="text-align:center">
+                <b>Nombre Jugador 1: </b>
+                 <input style="text-align:center" size ="20" id="jugador1" type="text" name="nickname1" maxlength="20" >
+                <br><br>
+                 <b>Nombre Jugador 2: </b>
+                <input style="text-align:center" size ="20" id="jugador2" type="text" name="nickname2" maxlength="20" >
+                <br><br>
                 <h3>INTRODUZCA EL CODIGO</h3>
 
                 <% if $torovaca.getNivel()== "basico" %>
@@ -65,6 +70,8 @@
                         <input type="submit" value="Empezar Juego" >
                 <%end%>
         </form>
+
+       
 </body>
 
 <script>
