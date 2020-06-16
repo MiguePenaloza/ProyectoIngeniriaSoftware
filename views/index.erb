@@ -4,124 +4,176 @@
         <link rel="stylesheet" href="/css/stylesheets.css">
 </head>
 
-<body>
-        <div class="container p-3 my-3 bg-dark text-white text-center">
+<div class="header">
                 <div class="page-header">
                         <h1 class="first-title">
-                                SONGS WEB APPLICATION
+                                <div>
+                                        <span>
+                                                <img src="https://image.flaticon.com/icons/svg/2298/2298491.svg" width="80" height="80">
+                                        </span>
+                                        <span>
+                                                TOROS Y VACAS
+                                        </span>
+                                        <span>
+                                                <img src="https://image.flaticon.com/icons/svg/2913/2913416.svg" width="80" height="80">
+                                        </span>
+                                </div>
                         </h1>
                 </div>
+</div>
+
+<body>
+
+        <div class="cont col-sm-10">
+                <h1 style="text-align:center">BIENVENIDOS</h1>
+
+                <form id="configuracion" method='get' action='/configuracion' style="text-align:center">
+                        <b>Menu de configuracion: </b>
+                        <input type="submit" value="Menu" >
+                </form>
+
+                <%if (params[:nivel]).to_s != ""
+                        $torovaca.setNivel((params[:nivel]).to_s)
+                end
+
+                if (params[:numeroIntentos]).to_i != 0
+                        $torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)
+                end%>
+
+                <form class="form" id="menu" method='post' action='/juego' style="text-align:center">
+                        <b>Nombre Jugador 1: </b>
+                        <input style="text-align:center" size ="20" id="jugador1" type="text" name="nickname1" maxlength="20" >
+                        <br><br>
+                        <b>Nombre Jugador 2: </b>
+                        <input style="text-align:center" size ="20" id="jugador2" type="text" name="nickname2" maxlength="20" >
+                        <br><br>
+                        <h3>INTRODUZCA EL CODIGO</h3>
+
+                        <% if $torovaca.getNivel()== "basico" %>
+                                <input type="submit" onclick="randBas()" value="Generar codigo aleatorio">
+                                <input style="text-align:center" size ="5" id="bc1" type="text" name="codigo1" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="bc2" type="text" name="codigo2" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="bc3" type="text" name="codigo3" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="bc4" type="text" name="codigo4" maxlength="1" required="">
+                                <input type="submit" value="Empezar Juego">
+                        <%end%>
+
+                        <% if $torovaca.getNivel()== "intermedio" %>
+                                <input type="submit" onclick="randInt()" value="Generar codigo aleatorio">
+                                <input style="text-align:center" size ="5" id="i1" type="text" name="codigo1" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="i2" type="text" name="codigo2" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="i3" type="text" name="codigo3" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="i4" type="text" name="codigo4" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="i5" type="text" name="codigo5" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="i6" type="text" name="codigo6" maxlength="1" required="">
+                                <input type="submit" value="Empezar Juego">
+                        <%end%>
+
+                        <% if $torovaca.getNivel()== "avanzado" %>
+                                <input type="submit" onclick="randAvan()" value="Generar codigo aleatorio">
+                                <input style="text-align:center" size ="5" id="a1" type="text" name="codigo1" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a2" type="text" name="codigo2" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a3" type="text" name="codigo3" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a4" type="text" name="codigo4" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a5" type="text" name="codigo5" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a6" type="text" name="codigo6" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a7" type="text" name="codigo7" maxlength="1" required="">
+                                <input style="text-align:center" size ="5" id="a8" type="text" name="codigo8" maxlength="1" required="">
+                                <input type="submit" value="Empezar Juego" >
+                        <%end%>
+                </form>
+                <form class="form" id="ranking" method='get' action='/ranking' style="text-align:center">
+                        <input type="submit" value="Ranking" >
+                </form>
         </div>
-
-        <h1 style="text-align:center">BIENVENIDOS</h1>
-
-        <form id="configuracion" method='get' action='/configuracion' style="text-align:center">
-                <b>Menu de configuracion: </b>
-                <input type="submit" value="Menu" >
-        </form>
-
-        <%if (params[:nivel]).to_s != ""
-                $torovaca.setNivel((params[:nivel]).to_s)
-        end
-
-        if (params[:numeroIntentos]).to_i != 0
-                $torovaca.setNumeroItentosPermitidos(params[:numeroIntentos].to_i)
-        end%>
-
-        <form class="form" id="menu" method='post' action='/juego' style="text-align:center">
-                <b>Nombre Jugador 1: </b>
-                 <input style="text-align:center" size ="20" id="jugador1" type="text" name="nickname1" maxlength="20" >
-                <br><br>
-                 <b>Nombre Jugador 2: </b>
-                <input style="text-align:center" size ="20" id="jugador2" type="text" name="nickname2" maxlength="20" >
-                <br><br>
-                <h3>INTRODUZCA EL CODIGO</h3>
-
-                <% if $torovaca.getNivel()== "basico" %>
-                        <input type="submit" onclick="randBas()" value="Generar codigo aleatorio">
-                        <input style="text-align:center" size ="5" id="bc1" type="text" name="codigo1" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="bc2" type="text" name="codigo2" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="bc3" type="text" name="codigo3" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="bc4" type="text" name="codigo4" maxlength="1" required="">
-                        <input type="submit" value="Empezar Juego">
-                <%end%>
-
-                <% if $torovaca.getNivel()== "intermedio" %>
-                        <input type="submit" onclick="randInt()" value="Generar codigo aleatorio">
-                        <input style="text-align:center" size ="5" id="i1" type="text" name="codigo1" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="i2" type="text" name="codigo2" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="i3" type="text" name="codigo3" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="i4" type="text" name="codigo4" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="i5" type="text" name="codigo5" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="i6" type="text" name="codigo6" maxlength="1" required="">
-                        <input type="submit" value="Empezar Juego">
-                <%end%>
-
-                <% if $torovaca.getNivel()== "avanzado" %>
-                        <input type="submit" onclick="randAvan()" value="Generar codigo aleatorio">
-                        <input style="text-align:center" size ="5" id="a1" type="text" name="codigo1" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a2" type="text" name="codigo2" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a3" type="text" name="codigo3" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a4" type="text" name="codigo4" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a5" type="text" name="codigo5" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a6" type="text" name="codigo6" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a7" type="text" name="codigo7" maxlength="1" required="">
-                        <input style="text-align:center" size ="5" id="a8" type="text" name="codigo8" maxlength="1" required="">
-                        <input type="submit" value="Empezar Juego" >
-                <%end%>
-        </form>
-        <form class="form" id="ranking" method='get' action='/ranking' style="text-align:center">
-                <input type="submit" value="Ranking" >
-        </form>
-
 </body>
+
+<footer class="panel-footer">
+        <div class="container">
+          <div class="row">
+            <section id="Integrantes" class="col-sm-6">
+              <p>Integrantes:</p>
+              <p>Diego Nicolas Peñaranda Antenzana</p>
+              <p>Miguel Alejandro Peñaloza Pachecho</p>
+              <p>Jose Carlos Olivera Peredo</p>
+              <p>Antonio Medina Padilla</p>
+              <hr class="visible-xs">
+            </section>
+            <section id="Materia" class="col-sm-6">
+              <p>Materia:</p>
+              <p>Ingenieria de Software</p>
+              <p>Semestre:</p>
+                <p>1/2020</p>
+                <p>Universidad Católica Boliviana "San Pablo"</p>
+              <hr class="visible-xs">
+            </section>
+          </div>
+          <div class="text-center" id="cr">&copy; Copyright Reserved</div>
+        </div>
+</footer>
 
 <script>
         function randBas(){
-                alert("Código de dificultad básica generado de manera aleatoria");
-                cb1 = Math.floor((Math.random() * 9));
-                cb2 = Math.floor((Math.random() * 9));
-                cb3 = Math.floor((Math.random() * 9));
-                cb4 = Math.floor((Math.random() * 9));
-                document.getElementById("bc1").value=cb1;
-                document.getElementById("bc2").value=cb2;
-                document.getElementById("bc3").value=cb3;
-                document.getElementById("bc4").value=cb4;
+                var res = confirm("Código de dificultad básica generado de manera aleatoria");
+                if(res===true){
+                        cb1 = Math.floor((Math.random() * 9));
+                        cb2 = Math.floor((Math.random() * 9));
+                        cb3 = Math.floor((Math.random() * 9));
+                        cb4 = Math.floor((Math.random() * 9));
+                        document.getElementById("bc1").value=cb1;
+                        document.getElementById("bc2").value=cb2;
+                        document.getElementById("bc3").value=cb3;
+                        document.getElementById("bc4").value=cb4;
+                }
+                else{
+                        window.location.href = '/';
+                }
         }
 
         function randInt(){
-                alert("Código de dificultad intermedia generado de manera aleatoria");
-                ci1 = Math.floor((Math.random() * 9));
-                ci2 = Math.floor((Math.random() * 9));
-                ci3 = Math.floor((Math.random() * 9));
-                ci4 = Math.floor((Math.random() * 9));
-                ci5 = Math.floor((Math.random() * 9));
-                ci6 = Math.floor((Math.random() * 9));
-                document.getElementById("i1").value = ci1;
-                document.getElementById("i2").value = ci2;
-                document.getElementById("i3").value = ci3;
-                document.getElementById("i4").value = ci4;
-                document.getElementById("i5").value = ci5;
-                document.getElementById("i6").value = ci6;
+                var res = confirm("Código de dificultad intermedia generado de manera aleatoria");
+                if(res===true){
+                        ci1 = Math.floor((Math.random() * 9));
+                        ci2 = Math.floor((Math.random() * 9));
+                        ci3 = Math.floor((Math.random() * 9));
+                        ci4 = Math.floor((Math.random() * 9));
+                        ci5 = Math.floor((Math.random() * 9));
+                        ci6 = Math.floor((Math.random() * 9));
+                        document.getElementById("i1").value = ci1;
+                        document.getElementById("i2").value = ci2;
+                        document.getElementById("i3").value = ci3;
+                        document.getElementById("i4").value = ci4;
+                        document.getElementById("i5").value = ci5;
+                        document.getElementById("i6").value = ci6;
+                }
+                else{
+                        window.location.href = '/';
+                }
+
         }
 
         function randAvan(){
-                alert("Código de dificultad avanzada generado de manera aleatoria");
-                ca1 = Math.floor((Math.random() * 9));
-                ca2 = Math.floor((Math.random() * 9));
-                ca3 = Math.floor((Math.random() * 9));
-                ca4 = Math.floor((Math.random() * 9));
-                ca5 = Math.floor((Math.random() * 9));
-                ca6 = Math.floor((Math.random() * 9));
-                ca7 = Math.floor((Math.random() * 9));
-                ca8 = Math.floor((Math.random() * 9));
-                document.getElementById("a1").value = ca1;
-                document.getElementById("a2").value = ca2;
-                document.getElementById("a3").value = ca3;
-                document.getElementById("a4").value = ca4;
-                document.getElementById("a5").value = ca5;
-                document.getElementById("a6").value = ca6;
-                document.getElementById("a7").value = ca7;
-                document.getElementById("a8").value = ca8;
+                var res = confirm("Código de dificultad avanzada generado de manera aleatoria");
+                if(res===true){
+                        ca1 = Math.floor((Math.random() * 9));
+                        ca2 = Math.floor((Math.random() * 9));
+                        ca3 = Math.floor((Math.random() * 9));
+                        ca4 = Math.floor((Math.random() * 9));
+                        ca5 = Math.floor((Math.random() * 9));
+                        ca6 = Math.floor((Math.random() * 9));
+                        ca7 = Math.floor((Math.random() * 9));
+                        ca8 = Math.floor((Math.random() * 9));
+                        document.getElementById("a1").value = ca1;
+                        document.getElementById("a2").value = ca2;
+                        document.getElementById("a3").value = ca3;
+                        document.getElementById("a4").value = ca4;
+                        document.getElementById("a5").value = ca5;
+                        document.getElementById("a6").value = ca6;
+                        document.getElementById("a7").value = ca7;
+                        document.getElementById("a8").value = ca8;
+                }
+                else{
+                        window.location.href = '/';
+                }
         }
 </script>
