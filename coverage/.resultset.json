@@ -1,31 +1,33 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/app.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/app.rb": {
         "lines": [
           1,
           1,
           1,
           null,
           1,
+          4,
+          4,
+          4,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           null,
           1,
           1,
           1,
-          1,
           null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
           null,
           1,
           0,
@@ -36,22 +38,23 @@
           1,
           0,
           null,
+          null,
           1,
-          0,
+          1,
           null
         ]
       },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/lib/TorosVacas.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/lib/TorosVacas.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
           null,
           null,
           null,
@@ -73,7 +76,7 @@
           2,
           null,
           1,
-          12,
+          22,
           null,
           1,
           1,
@@ -82,17 +85,17 @@
           null,
           null,
           1,
-          2,
+          3,
           null,
           null,
           1,
           1,
           null,
           1,
-          0,
+          1,
           null,
           1,
-          0,
+          1,
           null,
           null,
           null,
@@ -162,11 +165,11 @@
           null
         ]
       },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/lib/cronometro.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/lib/cronometro.rb": {
         "lines": [
           1,
           1,
-          2,
+          3,
           null,
           null,
           1,
@@ -177,22 +180,7 @@
           null
         ]
       },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/features/step_definitions/adivinar_steps.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/features/step_definitions/codigoSecreto_steps.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/adivinar_steps.rb": {
         "lines": [
           1,
           1,
@@ -204,6 +192,21 @@
           null,
           1,
           1,
+          null
+        ]
+      },
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/codigoSecreto_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           null,
@@ -220,7 +223,26 @@
           null
         ]
       },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/features/step_definitions/resultadoJuegoGano_steps.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/dificultad_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/generarCodigoAleatorio_steps.rb": {
         "lines": [
           1,
           1,
@@ -231,7 +253,7 @@
           null
         ]
       },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/features/step_definitions/resultadoJuegoPerdio_steps.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/resultadoJuegoGano_steps.rb": {
         "lines": [
           1,
           1,
@@ -242,7 +264,18 @@
           null
         ]
       },
-      "C:/Users/ASUS/Documents/Proyecto Ing Soft/ProyectoTorosVacas/ProyectoIngeniriaSoftware/features/step_definitions/template_steps.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/resultadoJuegoPerdio_steps.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/features/step_definitions/template_steps.rb": {
         "lines": [
           1,
           0,
@@ -285,11 +318,11 @@
         ]
       }
     },
-    "timestamp": 1592259587
+    "timestamp": 1592269364
   },
   "RSpec": {
     "coverage": {
-      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto/spec/TorosVacas_spec.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/spec/TorosVacas_spec.rb": {
         "lines": [
           null,
           1,
@@ -349,7 +382,7 @@
           null
         ]
       },
-      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto/lib/TorosVacas.rb": {
+      "/Users/carlos/Documents/Carlos/Ingenieria de Software/Proyecto 2/ProyectoIngeniriaSoftware/lib/TorosVacas.rb": {
         "lines": [
           1,
           null,
@@ -471,6 +504,6 @@
         ]
       }
     },
-    "timestamp": 1592195776
+    "timestamp": 1592269330
   }
 }

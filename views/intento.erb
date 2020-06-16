@@ -4,17 +4,32 @@
 <body>
     El tiempo transcurrido es: <%= $cronometro.tiempo_transcurrido().round(2)%> segundos.
 
-    <%if $torovaca.getNivel()== "basico"
-        codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s
+    <%if $torovaca.getNivel()== "basico"%>
+        <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s%>
+        <%if params[:nickname2]!=""%>
+            <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+        <%end%>
 
-    elsif $torovaca.getNivel()== "intermedio"
-        codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s
+    <%elsif $torovaca.getNivel()== "intermedio"%>
+        <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s%>
+        <%if params[:nickname2]!=""%>
+            <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+        <%end%>
 
-    elsif $torovaca.getNivel()== "avanzado"
-        codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s+params[:valor7].to_s+params[:valor8].to_s
-    end
+    <%elsif $torovaca.getNivel()== "avanzado"%>
+        <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s+params[:valor7].to_s+params[:valor8].to_s%>
+        <%if params[:nickname2]!=""%>
+            <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+        <%end%>
+    <%end%>
 
-    $torovaca.intento(codigoIntento)%>
+    <%$torovaca.intento(codigoIntento)%>
+
+
+    <h3 style="text-align:center">Numero de intentos: <%=$torovaca.getNumeroIntentos()%><h3>
+    <h3 style="text-align:center">Numero de intentos restantes: <%=$torovaca.getNumeroIntentosPermitidos()-$torovaca.getNumeroIntentos()%><h3>
+    <h3 style="text-align:center">Los toros son : <%= $torovaca.getCantidadToros()%></h3>
+    <h3 style="text-align:center">Las vacas son : <%= $torovaca.getCantidadVacas()%></h3>
 
     <% if $torovaca.winner()!=true && $torovaca.gameOver() !=true %>
         <form style="text-align:center">
@@ -22,14 +37,16 @@
         </form>
     <%end%>
 
-    <h3 style="text-align:center">Numero de intentos: <%=$torovaca.getNumeroIntentos()%><h3>
-    <h3 style="text-align:center">Numero de intentos restantes: <%=$torovaca.getNumeroIntentosPermitidos()-$torovaca.getNumeroIntentos()%><h3>
-    <h3 style="text-align:center">Los toros son : <%= $torovaca.getCantidadToros()%></h3>
-    <h3 style="text-align:center">Las vacas son : <%= $torovaca.getCantidadVacas()%></h3>
-
     <%if $torovaca.winner()%>
         <h3 style="text-align:center">GANASTE!!!<h3>
         Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.
+        <%# <%if params[:nickname2]!=""%> 
+        <%if $jugador2.getNickName!=""%>
+            <%$jugador2.setPuntuacion($torovaca.getNumeroIntentos())%>
+            <%$jugador2.setTiempo($tiempo_total)%>
+            <%$jugador2.setPuntuacionTotal%>
+            <%@jugadores.setListaJugadores($jugador2)%>
+        <%end%>
         <form method="get" action="/" style="text-align:center">
             <button type="submit" >Inicio</button>
         </form>
@@ -39,6 +56,14 @@
         <form method="get" action="/" style="text-align:center">
             <button type="submit" >Inicio</button>
         </form>
+    <%end%>
+
+    <%=$lista=@jugadores.getListaJugadores%>
+    <%for i in (0..$lista.size-1)%>
+        <%=$lista[i].getNickName%>
+        <%=$lista[i].getPuntuacion%>
+        <%=$lista[i].getTiempo%>
+        <%=$lista[i].getPuntuacionTotal%>
     <%end%>
 </body>
 <footer>
