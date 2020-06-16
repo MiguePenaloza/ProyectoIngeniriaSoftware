@@ -1,24 +1,76 @@
-<h1 style="text-align:center">MEJORES JUGADORES</h1>
- <%@jugadores.ordenarJugadores%>
- <%$lista=@jugadores.getListaJugadores%>
-<body >
-    <div style="text-align:center">    
-        <table class="ranking" style="text-align:center" align="center">
-        <tr >
-            <th scope="row">Nº</th>
-            <th >Nombre</th>
-            <th>Numero Intentos</th>
-            <th>Tiempo</th>
-            <th>Puntuacion Total</th>
-        </tr>
-        <%for i in (0..$lista.size-1)%>
-            <tr>
-                <th><%=i+1%></th>
-                <td><%=$lista[i].getNickName%></td>
-                <td><%=$lista[i].getPuntuacion%></td>
-                <td><%=$lista[i].getTiempo%></td>
-                <td><%=$lista[i].getPuntuacionTotal%></td>
-            </tr>
-        <%end%>
+<head>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/stylesheets.css">
+</head>
+
+<div class="header">
+    <div class="page-header">
+        <h1 class="first-title">
+            <div>
+                <span>
+                    <img src="https://image.flaticon.com/icons/svg/2298/2298491.svg" width="80" height="80">
+                </span>
+                <span>
+                    TOROS Y VACAS
+                </span>
+                <span>
+                    <img src="https://image.flaticon.com/icons/svg/2913/2913416.svg" width="80" height="80">
+                </span>
+            </div>
+        </h1>
     </div>
- </body>
+</div>
+
+
+    
+<body>
+    <div class="cont col-sm-10">
+        <h1 style="text-align:center">MEJORES JUGADORES</h1>
+        <%@jugadores.ordenarJugadores%>
+        <%$lista=@jugadores.getListaJugadores%>
+        <div>    
+            <table class="ranking" style="text-align:center" align-self="center">
+                <tr >
+                <th scope="row">Nº</th>
+                <th >Nombre</th>
+                <th>Numero Intentos</th>
+                <th>Tiempo</th>
+                <th>Puntuacion Total</th>
+                </tr>
+                <%for i in (0..$lista.size-1)%>
+                    <tr>
+                    <th><%=i+1%></th>
+                    <td><%=$lista[i].getNickName%></td>
+                    <td><%=$lista[i].getPuntuacion%></td>
+                    <td><%=$lista[i].getTiempo%></td>
+                    <td><%=$lista[i].getPuntuacionTotal%></td>
+                    </tr>
+                <%end%>
+            </table>
+        </div>
+    </div>
+</body>
+
+<footer class="panel-footer-1">
+  <div class="container">
+    <div class="row">
+      <section id="Integrantes" class="col-sm-6">
+        <p>Integrantes:</p>
+        <p>Diego Nicolas Peñaranda Antenzana</p>
+        <p>Miguel Alejandro Peñaloza Pachecho</p>
+        <p>Jose Carlos Olivera Peredo</p>
+        <p>Antonio Medina Padilla</p>
+        <hr class="visible-xs">
+      </section>
+      <section id="Materia" class="col-sm-6">
+        <p>Materia:</p>
+        <p>Ingenieria de Software</p>
+        <p>Semestre:</p>
+        <p>1/2020</p>
+        <p>Universidad Católica Boliviana "San Pablo"</p>
+        <hr class="visible-xs">
+      </section>
+    </div>
+  <div class="text-center" id="cr">&copy; Copyright Reserved</div>
+  </div>
+</footer>

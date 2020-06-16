@@ -1,76 +1,118 @@
 <head>
-
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/stylesheets.css">
 </head>
+
+<div class="header">
+                <div class="page-header">
+                        <h1 class="first-title">
+                                <div>
+                                        <span>
+                                                <img src="https://image.flaticon.com/icons/svg/2298/2298491.svg" width="80" height="80">
+                                        </span>
+                                        <span>
+                                                TOROS Y VACAS
+                                        </span>
+                                        <span>
+                                                <img src="https://image.flaticon.com/icons/svg/2913/2913416.svg" width="80" height="80">
+                                        </span>
+                                </div>
+                        </h1>
+                </div>
+</div>
+
 <body>
-    El tiempo transcurrido es: <%= $cronometro.tiempo_transcurrido().round(2)%> segundos.
+    <div class="cont col-sm-10">
+        El tiempo transcurrido es: <%= $cronometro.tiempo_transcurrido().round(2)%> segundos.
 
-    <%if $torovaca.getNivel()== "basico"%>
-        <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s%>
-        <%if params[:nickname2]!=""%>
-            <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+        <%if $torovaca.getNivel()== "basico"%>
+            <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s%>
+            <%if params[:nickname2]!=""%>
+                <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+            <%end%>
+
+        <%elsif $torovaca.getNivel()== "intermedio"%>
+            <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s%>
+            <%if params[:nickname2]!=""%>
+                <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+            <%end%>
+
+        <%elsif $torovaca.getNivel()== "avanzado"%>
+            <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s+params[:valor7].to_s+params[:valor8].to_s%>
+            <%if params[:nickname2]!=""%>
+                <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+            <%end%>
         <%end%>
 
-    <%elsif $torovaca.getNivel()== "intermedio"%>
-        <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s%>
-        <%if params[:nickname2]!=""%>
-            <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+        <%$torovaca.intento(codigoIntento)%>
+        <%$intentos_realizados.push(codigoIntento)%>
+
+
+        <h3 style="text-align:center">Numero de intentos: <%=$torovaca.getNumeroIntentos()%><h3>
+        <h3 style="text-align:center">Numero de intentos restantes: <%=$torovaca.getNumeroIntentosPermitidos()-$torovaca.getNumeroIntentos()%><h3>
+        <h3 style="text-align:center">Los toros son : <%= $torovaca.getCantidadToros()%></h3>
+        <h3 style="text-align:center">Las vacas son : <%= $torovaca.getCantidadVacas()%></h3>
+
+        <% if $torovaca.winner()!=true && $torovaca.gameOver() !=true %>
+            <form style="text-align:center">
+                <input type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
+            </form>
         <%end%>
 
-    <%elsif $torovaca.getNivel()== "avanzado"%>
-        <%codigoIntento=params[:valor1].to_s + params[:valor2].to_s + params[:valor3].to_s+params[:valor4].to_s+params[:valor5].to_s+params[:valor6].to_s+params[:valor7].to_s+params[:valor8].to_s%>
-        <%if params[:nickname2]!=""%>
-            <h2 style="text-align:center"><%=$jugador2.getNickName%></h2>
+        <%if $torovaca.winner()%>
+            <h3 style="text-align:center">GANASTE!!!</h3>
+            <p>Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.</p>
+            <p>El codigo secreto era: <%= $torovaca.getCodigo()%> </p>
+            <%# <%if params[:nickname2]!=""%> 
+            <%if $jugador2.getNickName!=""%>
+                <%$jugador2.setPuntuacion($torovaca.getNumeroIntentos())%>
+                <%$jugador2.setTiempo($tiempo_total)%>
+                <%$jugador2.setPuntuacionTotal%>
+                <%@jugadores.setListaJugadores($jugador2)%>
+            <%end%>
+            <form method="get" action="/" style="text-align:center">
+                <button type="submit" >Inicio</button>
+            </form>
+        <% elsif $torovaca.gameOver()%>
+            <h3 style="text-align:center">PERDISTE :(</h3>
+            <p>Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos. </p>
+            <p>El codigo secreto era: <%= $torovaca.getCodigo()%> </p>
+            <form method="get" action="/" style="text-align:center">
+                <button type="submit" >Inicio</button>
+            </form>
         <%end%>
-    <%end%>
-
-    <%$torovaca.intento(codigoIntento)%>
-    <%$intentos_realizados.push(codigoIntento)%>
-
-
-    <h3 style="text-align:center">Numero de intentos: <%=$torovaca.getNumeroIntentos()%><h3>
-    <h3 style="text-align:center">Numero de intentos restantes: <%=$torovaca.getNumeroIntentosPermitidos()-$torovaca.getNumeroIntentos()%><h3>
-    <h3 style="text-align:center">Los toros son : <%= $torovaca.getCantidadToros()%></h3>
-    <h3 style="text-align:center">Las vacas son : <%= $torovaca.getCantidadVacas()%></h3>
-
-    <% if $torovaca.winner()!=true && $torovaca.gameOver() !=true %>
-        <form style="text-align:center">
-            <input type="button" onclick="history.back()" name="volver atrás" value="Volver Atrás">
-        </form>
-    <%end%>
-
-    <%if $torovaca.winner()%>
-        <h3 style="text-align:center">GANASTE!!!</h3>
-        <p>Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos.</p>
-        <p>El codigo secreto era: <%= $torovaca.getCodigo()%> </p>
-        <%# <%if params[:nickname2]!=""%> 
-        <%if $jugador2.getNickName!=""%>
-            <%$jugador2.setPuntuacion($torovaca.getNumeroIntentos())%>
-            <%$jugador2.setTiempo($tiempo_total)%>
-            <%$jugador2.setPuntuacionTotal%>
-            <%@jugadores.setListaJugadores($jugador2)%>
-        <%end%>
-        <form method="get" action="/" style="text-align:center">
-            <button type="submit" >Inicio</button>
-        </form>
-    <% elsif $torovaca.gameOver()%>
-        <h3 style="text-align:center">PERDISTE :(</h3>
-        <p>Tu tiempo utilizado fue de <%= $tiempo_total = $cronometro.tiempo_transcurrido().round(2)%> segundos. </p>
-        <p>El codigo secreto era: <%= $torovaca.getCodigo()%> </p>
-        <form method="get" action="/" style="text-align:center">
-            <button type="submit" >Inicio</button>
-        </form>
-    <%end%>
-    <div>
-        <h3>Lista de los intentos realizados a lo largo de toda la partida</h3>
-        <ol>
-            <% for i in 0..$intentos_realizados.size - 1%>
-                <li><%= $intentos_realizados[i]%></li>
-            <%end%>     
-        </ol>
+        <div>
+            <h3>Lista de los intentos realizados a lo largo de toda la partida</h3>
+            <ol>
+                <% for i in 0..$intentos_realizados.size - 1%>
+                    <li><%= $intentos_realizados[i]%></li>
+                <%end%>     
+            </ol>
+        </div>
     </div>
-
 </body>
-<footer>
 
+<footer class="panel-footer">
+    <div class="container">
+        <div class="row">
+            <section id="Integrantes" class="col-sm-6">
+              <p>Integrantes:</p>
+              <p>Diego Nicolas Peñaranda Antenzana</p>
+              <p>Miguel Alejandro Peñaloza Pachecho</p>
+              <p>Jose Carlos Olivera Peredo</p>
+              <p>Antonio Medina Padilla</p>
+              <hr class="visible-xs">
+            </section>
+            <section id="Materia" class="col-sm-6">
+              <p>Materia:</p>
+              <p>Ingenieria de Software</p>
+              <p>Semestre:</p>
+                <p>1/2020</p>
+                <p>Universidad Católica Boliviana "San Pablo"</p>
+              <hr class="visible-xs">
+            </section>
+          </div>
+        <div class="text-center" id="cr">&copy; Copyright Reserved</div>
+    </div>
 </footer>
 
